@@ -1,0 +1,16 @@
+src/
+├── components/
+│   ├── MenuItems.js
+│   └── routing/
+│       ├── NavBar.js
+│       └── MyRoutes.js
+├── pages/
+│   ├── HomePage.js
+│   ├── ProductPage.js
+│   ├── CheckoutPage.js
+│   ├── AboutUs.js
+│   └── Contact.js
+├── data/
+│   └── menuData.js
+├── App.js
+└── styles.css
