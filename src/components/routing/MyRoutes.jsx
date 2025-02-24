@@ -5,6 +5,8 @@ import ProductPage from "../../pages/ProductPage";
 import CheckoutPage from "../../pages/CheckoutPage";
 import AboutUs from "../../pages/AboutUs";
 import Contact from "../../pages/Contact";
+import OrderingTCs from "../../pages/OrderingTCs";
+import PrivacyPolicy from "../../pages/PrivacyPolicy";
 
 const MyRoutes = () => {
   return (
@@ -14,6 +16,8 @@ const MyRoutes = () => {
       <Route path="/checkout" element={<CheckoutPage />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/orderingtcs" element={<OrderingTCs/>}/>
+      <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>}/>
     </Routes>
   );
 };
