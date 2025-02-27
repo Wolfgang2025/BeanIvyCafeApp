@@ -4,10 +4,10 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("/images/woman-6992691_1920.jpg") no-repeat center center
+  background: url("../public/images/woman-6992691_1920.jpg") no-repeat center center
     fixed;
   background-size: cover;
-  color: #fdfbfb;
+  color: #171313;
   min-height: 100vh;
 }
 
@@ -157,4 +157,60 @@ input[type="number"] {
   width: 50px;
   padding: 5px;
   margin-right: 10px;
+}
+
+/* General footer styling */
+.footer {
+  font-family: "Roboto", sans-serif;
+  background-color: #343a40; /* Dark background color */
+  color: #f9f6f6; /* Light text color for contrast */
+  padding: 20px 0; /* Top and bottom padding for spacing */
+  display: flex;
+  justify-content: center; /* Align links horizontally at the center */
+  align-items: center; /* Vertically align items */
+  position: fixed; /* Keep the footer at the bottom */
+  width: 100%; /* Full width of the page */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Styling for the unordered list (ul) to use flexbox */
+.footer ul {
+  display: flex; /* Enable flexbox */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default bullet points */
+}
+
+/* Styling for each list item (li) to space them out */
+.footer li {
+  margin: 0 15px; /* Add horizontal margin between the links */
+}
+
+/* Link Styling */
+.footer a {
+  text-decoration: none;
+  color: #f9f6f6; /* Light color for links */
+  margin: 0 15px; /* Space out links horizontally */
+  font-size: 16px; /* Font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+  color: #ffffff; /* Lighter color on hover */
+}
+
+/* Optional: Make the footer text larger on mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .footer a {
+    margin: 10px 0; /* Vertical margin between links */
+  }
+}
+
+.contact {
+  font-family: "Roboto", sans-serif;
+  color: #d2c7c7;
 }
