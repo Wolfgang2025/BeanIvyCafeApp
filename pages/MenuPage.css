@@ -1,0 +1,34 @@
+.menu-page {
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  .cart-icon span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff6347;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
