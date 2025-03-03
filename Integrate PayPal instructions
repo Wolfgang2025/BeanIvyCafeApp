@@ -1,0 +1,154 @@
+To integrate your PayPal HTML into the **Bean & Ivy Cafe App**, we need to replace the static HTML with a React component that uses the `@paypal/react-paypal-js` library. Here's how you can do it:
+
+---
+
+### Steps to Integrate PayPal:
+
+1. **Install `@paypal/react-paypal-js`**:
+   If you haven't already, install the PayPal React SDK:
+   ```bash
+   npm install @paypal/react-paypal-js
+   ```
+
+2. **Create a PayPal Button Component**:
+   Create a new component for the PayPal button (e.g., `PayPalButton.js`).
+
+3. **Integrate the PayPal Button into Your App**:
+   Add the `PayPalButton` component to your `App` or any other relevant component.
+
+---
+
+### Updated Code:
+
+#### 1. `PayPalButton.js` (New Component)
+```javascript
+import React from "react";
+import { PayPalButtons } from "@paypal/react-paypal-js";
+
+const PayPalButton = () => {
+  const createOrder = (data, actions) => {
+    return actions.order.create({
+      purchase_units: [
+        {
+          amount: {
+            value: "10.00", // Set the amount dynamically as needed
+            currency_code: "GBP", // Currency code (GBP for British Pounds)
+          },
+        },
+      ],
+    });
+  };
+
+  const onApprove = (data, actions) => {
+    return actions.order.capture().then((details) => {
+      alert(`Transaction completed by ${details.payer.name.given_name}`);
+      // You can add additional logic here (e.g., update order status in your database)
+    });
+  };
+
+  const onError = (err) => {
+    console.error("PayPal error:", err);
+    alert("An error occurred during the payment process. Please try again.");
+  };
+
+  return (
+    <div id="paypal-button-container">
+      <PayPalButtons
+        createOrder={createOrder}
+        onApprove={onApprove}
+        onError={onError}
+      />
+    </div>
+  );
+};
+
+export default PayPalButton;
+```
+
+---
+
+#### 2. `App.js` (Updated)
+```javascript
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import NavBar from "./components/routing/NavBar";
+import MyRoutes from "./components/routing/MyRoutes";
+import PayPalButton from "./components/PayPalButton"; // Import the PayPalButton component
+import "./styles.css";
+
+function App() {
+  return (
+    <PayPalScriptProvider
+      options={{
+        "client-id": "AdVsAfIiMWgcgtgQeyRX6l9o-cVckBXLJ-tgJS3m1HM7sodaLOLMiSqOw67V7K6h_eAcJxEg9nII_pYQ", // Replace with your actual PayPal client ID
+        currency: "GBP", // Set currency to GBP
+        "enable-funding": "venmo,paylater,card", // Enable additional funding sources
+      }}
+    >
+      <Router>
+        <div className="App">
+          <NavBar />
+          <div style={{ paddingTop: "60px" }}>
+            <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1>
+            <MyRoutes />
+            {/* Add the PayPalButton component */}
+            <div style={{ margin: "20px auto", maxWidth: "500px" }}>
+              <PayPalButton />
+            </div>
+          </div>
+        </div>
+      </Router>
+    </PayPalScriptProvider>
+  );
+}
+
+export default App;
+```
+
+---
+
+### Key Changes:
+1. **PayPalButton Component**:
+   - Uses the `PayPalButtons` component from `@paypal/react-paypal-js`.
+   - Handles the `createOrder`, `onApprove`, and `onError` events.
+   - Displays a PayPal button that allows users to make payments.
+
+2. **PayPalScriptProvider**:
+   - Initializes the PayPal SDK with your `client-id` and other options (e.g., currency, funding sources).
+
+3. **Integration in `App.js`**:
+   - The `PayPalButton` component is added below the `MyRoutes` component.
+   - Styled to fit within the app layout.
+
+---
+
+### Example Workflow:
+1. **User Clicks PayPal Button**:
+   - The `createOrder` function is called to create a payment order.
+2. **User Approves Payment**:
+   - The `onApprove` function captures the payment and displays a success message.
+3. **Error Handling**:
+   - The `onError` function handles any errors during the payment process.
+
+---
+
+### Styling (Optional):
+You can customize the PayPal button's appearance using CSS. For example:
+```css
+#paypal-button-container {
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: center;
+}
+```
+
+---
+
+### Testing:
+1. Replace the `client-id` with your actual PayPal sandbox or production client ID.
+2. Test the payment flow using a sandbox account (https://developer.paypal.com/).
+
+---
+
+Let me know if you need further assistance! 🚀
