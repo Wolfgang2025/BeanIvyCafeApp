@@ -3,9 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React App</title>
+    <title>React App with PayPal Integration</title>
+    <!-- PayPal SDK -->
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AdVsAfIiMWgcgtgQeyRX6l9o-cVckBXLJ-tgJS3m1HM7sodaLOLMiSqOw67V7K6h_eAcJxEg9nII_pYQ&buyer-country=US&currency=USD&components=buttons&enable-funding=venmo,paylater,card"
+      data-sdk-integration-source="developer-studio"
+    ></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Your existing React app content will be rendered here -->
+      <div class="App">
+        <nav class="navbar navbar-expand-lg navbar-dark"></nav>
+        <div style="padding-top: 60px">
+          <h1 class="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1>
+          <div class="checkout-page">
+            <h1 class="cursive-heading">Your Bohemian Basket</h1>
+            <div class="basket-items"></div>
+            <div id="paypal-button-container"></div>
+            <button class="checkout-button" style="display: none">
+              Complete Your Journey
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <p id="result-message"></p>
+    <!-- Initialize the JS-SDK and your app.js -->
+    <script src="app.js"></script>
   </body>
 </html>
