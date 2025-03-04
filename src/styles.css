@@ -4,8 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("../public/images/woman-6992691_1920.jpg") no-repeat center center
-    fixed;
+  background: url("/project/workspace/public/images/Bean_and_Ivy_London.png")
+    no-repeat center center fixed;
   background-size: cover;
   color: #171313;
   min-height: 100vh;
@@ -59,7 +59,7 @@ body {
 .home-page,
 .about-us,
 .checkout-page {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 210, 169, 0.8);
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -80,7 +80,7 @@ body {
 }
 
 .menu-card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(71, 62, 62, 0.9);
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -101,11 +101,11 @@ body {
 .menu-price {
   font-family: "Amatic SC", cursive;
   font-size: 1.5em;
-  color: #6b4226;
+  color: #f5e2d6;
 }
 
 .menu-description {
-  color: #4a4a4a;
+  color: #faf7f7;
   font-size: 0.9em;
   height: 60px;
   overflow: hidden;
@@ -116,7 +116,7 @@ body {
 }
 
 .order-button {
-  background-color: #6b4226;
+  background-color: #755343;
   color: #f8f4e9;
   border: none;
   padding: 0.5rem 1rem;
@@ -132,7 +132,7 @@ body {
 }
 
 .product-page {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(230, 210, 169, 0.8);
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
@@ -149,7 +149,7 @@ body {
 }
 
 .product-description {
-  color: #4a4a4a;
+  color: #f8f4f4;
   margin-bottom: 1rem;
 }
 
