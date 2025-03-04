@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useCart } from "../CartContext"; // Import useCart
-import { menuItems } from "../data/MenuData";
-import MenuItem from "../data/MenuItem"; // Import MenuItem from the data folder
-import CartSidebar from "../components/CartSidebar";
+import CartSidebar from "../routing2/CartSidebar";
+import { menuItems } from "../data2/menuData";
+import MenuItem from "../routing2/MenuItem/MenuItem";
 import "./MenuPage.css";
 
 const MenuPage = () => {

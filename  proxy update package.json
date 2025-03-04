@@ -1,8 +1,0 @@
-{
-  "name": "bean-and-ivy-cafe",
-  "version": "1.0.0",
-  "proxy": "http://localhost:8080",
-  "dependencies": {
-    // Your existing dependencies
-  }
-}
