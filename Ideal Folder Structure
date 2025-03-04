@@ -1,0 +1,18 @@
+my-app/
+├── public/                  # Static assets (e.g., images, fonts)
+├── src/
+│   ├── assets/              # Images, icons, fonts, etc.
+│   ├── components/          # Reusable UI components
+│   ├── data/                # Data files (e.g., menuData.js)
+│   ├── pages/               # Page components (e.g., HomePage, MenuPage)
+│   ├── context/             # React Context files (e.g., CartContext.js)
+│   ├── hooks/               # Custom React hooks
+│   ├── services/            # API services or utility functions
+│   ├── styles/              # Global styles or CSS files
+│   ├── App.js               # Main App component
+│   ├── index.js             # Entry point
+│   └── index.css            # Global styles
+├── .gitignore               # Files to ignore in Git
+├── package.json             # Project dependencies
+├── README.md                # Project documentation
+└── ...                      # Other configuration files
