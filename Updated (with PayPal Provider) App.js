@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { CartProvider } from "./CartContext"; // Import CartProvider
-import NavBar from "./components/routing/NavBar";
+import NavBar from "./components/Navbar.jsx";
 import MyRoutes from "./components/routing/MyRoutes";
 import "./styles.css";
 
