@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useCart } from "../CartContext"; // Import useCart
-import CartSidebar from "../routing2/CartSidebar";
+import { useCart } from "../context2/CartContext"; // Import useCart
+import CartSidebar from "../components2/CartSidebar";
 import { menuItems } from "../data2/menuData";
-import MenuItem from "../routing2/MenuItem/MenuItem";
-import "./MenuPage.css";
+import MenuItem from "../components2/MenuItem";
+import "../styles2/MenuPage.css";
 
 const MenuPage = () => {
   const { addToCart } = useCart(); // Use addToCart from context
