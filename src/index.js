@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App"; // ✅ Correct import path for App
-import "./styles.css"; // ✅ Correct import path for CSS
+import "./styles2/Oldstyles.css"; // ✅ Correct import path for CSS
 
 // Create a root for ReactDOM
 const root = ReactDOM.createRoot(document.getElementById("root"));

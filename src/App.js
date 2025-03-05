@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-import { CartProvider } from "./CartContext"; // Import CartProvider
-import NavBar from "./components/Navbar.jsx"; // Ensure this path is correct
-import MyRoutes from "./components/routing/MyRoutes";
-import Footer from "./components/routing/Footer"; // Import Footer
-import "./styles.css";
+// import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
+import NavBar from "./components2/Navbar.jsx"; // Ensure this path is correct
+import MyRoutes from "./components2/routing2/MyRoutes.jsx";
+import Footer from "./components2/routing2/Footer.jsx"; // Import Footer
+import "./styles2/Oldstyles.css";
 
 function App() {
   useEffect(() => {
