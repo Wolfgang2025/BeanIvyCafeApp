@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        {/* <Link className="navbar-brand" to="/">
           Bean & Ivy
         </Link>
         <button
@@ -18,7 +18,7 @@ export default function NavBar() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
