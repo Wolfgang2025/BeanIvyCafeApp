@@ -6,8 +6,12 @@ import MenuItem from "../components2/MenuItem";
 import "../styles2/MenuPage.css";
 
 const MenuPage = () => {
-  const { addToCart } = useCart(); // Use addToCart from context
+  const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, { ...item, quantity: 1 }]);
+  };
 
   return (
     <div className="menu-page">
