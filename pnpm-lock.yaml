@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  ajv:
+    specifier: ^8.17.1
+    version: 8.17.1
+  ajv-keywords:
+    specifier: ^5.1.0
+    version: 5.1.0(ajv@8.17.1)
   react:
     specifier: ^19.0.0
     version: 19.0.0

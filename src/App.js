@@ -5,6 +5,7 @@ import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvide
 import NavBar from "./components2/Navbar.jsx"; // Ensure this path is correct
 import MyRoutes from "./components2/routing2/MyRoutes.jsx";
 import Footer from "./components2/routing2/Footer.jsx"; // Import Footer
+//import HomePage from "../src/pages2/HomePage.jsx"//
 import "./styles2/Oldstyles.css";
 
 function App() {
