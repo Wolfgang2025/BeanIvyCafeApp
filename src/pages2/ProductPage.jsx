@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { menuItems } from "../data/menuData";
+import { menuItems } from "../data2/menuData";
 
 export default function ProductPage() {
   const { id } = useParams();

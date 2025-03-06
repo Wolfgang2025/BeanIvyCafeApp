@@ -1,12 +1,14 @@
-import React from 'react';
-import './CartSidebar.css';
+import React from "react";
+import "../styles2/CartSidebar.css";
 
 const CartSidebar = ({ isOpen, onClose, cartItems }) => {
   return (
-    <div className={`cart-sidebar ${isOpen ? 'open' : ''}`}>
+    <div className={`cart-sidebar ${isOpen ? "open" : ""}`}>
       <div className="cart-header">
         <h2>Your Basket</h2>
-        <button className="close-btn" onClick={onClose}>×</button>
+        <button className="close-btn" onClick={onClose}>
+          ×
+        </button>
       </div>
 
       <div className="cart-items">
@@ -26,7 +28,12 @@ const CartSidebar = ({ isOpen, onClose, cartItems }) => {
       </div>
 
       <div className="cart-total">
-        <h3>Total: £{cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2)}</h3>
+        <h3>
+          Total: £
+          {cartItems
+            .reduce((sum, item) => sum + item.price * item.quantity, 0)
+            .toFixed(2)}
+        </h3>
         <button className="checkout-btn">Checkout</button>
       </div>
     </div>

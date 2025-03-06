@@ -1,17 +1,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../../pages/HomePage";
-import ProductPage from "../pages/ProductPage";
-import CheckoutPage from "../../pages/CheckoutPage";
-import AboutUs from "../pages/AboutUs";
-import Contact from "../pages/Contact";
-import OrderingTCs from "../pages/OrderingTCs";
-import PrivacyPolicy from "../pages/PrivacyPolicy";
+import HomePage from "../../pages2/HomePage";
+import MenuPage from "../../pages2/MenuPage";
+import ProductPage from "../../pages2/ProductPage";
+import CheckoutPage from "../../pages2/CheckoutPage";
+import AboutUs from "../../pages2/AboutUs";
+import Contact from "../../pages2/Contact";
+import OrderingTCs from "../../pages2/OrderingTCs";
+import PrivacyPolicy from "../../pages2/PrivacyPolicy";
 
 const MyRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/menupage" element={<MenuPage />} />
       <Route path="/product/:id" element={<ProductPage />} />
       <Route path="/checkout" element={<CheckoutPage />} />
       <Route path="/about" element={<AboutUs />} />
