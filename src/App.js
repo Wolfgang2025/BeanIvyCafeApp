@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 // import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
-import NavBar from "./components2/Navbar.jsx"; // Ensure this path is correct
 import MyRoutes from "./components2/routing2/MyRoutes.jsx";
-import Footer from "./components2/routing2/Footer.jsx"; // Import Footer
-//import HomePage from "../src/pages2/HomePage.jsx"//
-import "./styles2/Oldstyles.css";
+import "./styles2/styles.css";
 
 function App() {
   // useEffect(() => {
@@ -117,24 +113,17 @@ function App() {
           "enable-funding": "venmo,paylater,card",
         }}
       > */}
-      <Router>
-        <div className="App">
-          <NavBar />
-          <div style={{ paddingTop: "60px" }}>
-            <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1>
-            <MyRoutes />
-            {/* PayPal Button Container */}
-            <div
-              id="paypal-button-container"
-              style={{ margin: "20px auto", maxWidth: "500px" }}
-            ></div>
-          </div>
-          {/* Footer */}
-          <div className="footer">
-            <Footer />
-          </div>
+      <div className="App">
+        <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
+          {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
+          <MyRoutes />
+          {/* PayPal Button Container */}
+          <div
+            id="paypal-button-container"
+            style={{ margin: "20px auto", maxWidth: "500px" }}
+          ></div>
         </div>
-      </Router>
+      </div>
       {/* </PayPalScriptProvider>  */}
     </CartProvider>
   );
