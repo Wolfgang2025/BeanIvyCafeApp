@@ -4,8 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("/project/workspace/public/images/Bean_and_Ivy_London.png")
-    no-repeat center center fixed;
+  background: url("/public/images/Bean_and_Ivy_London.png") no-repeat center
+    center fixed;
   background-size: cover;
   color: #171313;
   min-height: 100vh;
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
+/* 
 .bohemian-nav {
   background-color: rgba(107, 66, 38, 0.8);
   padding: 1rem;
@@ -25,7 +25,7 @@ body {
   top: 0;
   z-index: 1000;
   width: 100%;
-}
+} */
 
 .nav-link {
   color: #f8f4e9;
@@ -65,6 +65,15 @@ body {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us p {
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
 }
 
 .menu-intro {
@@ -162,14 +171,15 @@ input[type="number"] {
 /* General footer styling */
 .footer {
   font-family: "Roboto", sans-serif;
-  background-color: #343a40; /* Dark background color */
-  color: #f9f6f6; /* Light text color for contrast */
-  padding: 20px 0; /* Top and bottom padding for spacing */
+  background-color: rgba(14, 13, 13, 0.85);
+  color: #f8f4e9; /* Light text color for contrast */
+  padding: 25px 0;
   display: flex;
   justify-content: center; /* Align links horizontally at the center */
   align-items: center; /* Vertically align items */
   position: fixed; /* Keep the footer at the bottom */
   width: 100%; /* Full width of the page */
+  /* max-width: 1500px; */
   bottom: 0; /* Stick to the bottom */
 }
 
@@ -183,20 +193,20 @@ input[type="number"] {
 
 /* Styling for each list item (li) to space them out */
 .footer li {
-  margin: 0 15px; /* Add horizontal margin between the links */
+  margin: 0 20px; /* Add horizontal margin between the links */
 }
 
 /* Link Styling */
 .footer a {
   text-decoration: none;
-  color: #f9f6f6; /* Light color for links */
+  color: rgba(243, 233, 212, 0.8); /* Light colour for the links */
   margin: 0 15px; /* Space out links horizontally */
-  font-size: 16px; /* Font size */
+  font-size: 17px; /* Font size */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .footer a:hover {
-  color: #ffffff; /* Lighter color on hover */
+  color: #d4a574; /* Lighter color on hover */
 }
 
 /* Optional: Make the footer text larger on mobile */
@@ -210,7 +220,18 @@ input[type="number"] {
   }
 }
 
-.contact {
+.contactContainer {
+  /* font-family: "Roboto", sans-serif;
+  color: #d2c7c7; */
+  margin-left: 515px;
+  margin-top: 80px;
+}
+
+.contactContainer p {
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
   font-family: "Roboto", sans-serif;
-  color: #d2c7c7;
+  font-style: italic;
+  padding-left: 20px;
 }
