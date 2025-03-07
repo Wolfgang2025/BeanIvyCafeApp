@@ -57,8 +57,9 @@
 }
 
 .navbar-cafe-name {
-  font-family: "Amatic SC", cursive;
-  font-size: 2.5em;
+  /* font-family: "Amatic SC", cursive; */
+  font-family: "Alike", serif;
+  font-size: 1.7rem;
   color: rgba(243, 233, 212, 0.8);
   text-shadow: 2px 2px 4px rgba(246, 240, 240, 0.5);
   text-align: center;
