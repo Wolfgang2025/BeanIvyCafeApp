@@ -21,7 +21,7 @@ const MyRoutes = () => {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/menupage" element={<MenuPage />} />
+          <Route path="/MenuPage" element={<MenuPage />} />
           {/* TBR - is the ProductPage still needed and if so, is the path correct? */}
           <Route path="/product/:id/" element={<ProductPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
