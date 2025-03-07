@@ -1,52 +1,53 @@
-.home-page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../assets/background.jpg'); /* Add your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-    position: relative;
-  }
-  
-  .home-page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: 1;
-  }
-  
-  .hero-section {
-    position: relative;
-    z-index: 2;
-  }
-  
+/* REDUNDANT STYLING _ REMOVE OR ADD backround image? */
+/* .home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+} */
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .logo {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 3rem;
   }
-  
+
   .tagline {
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.2rem;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .logo {
-      font-size: 3rem;
-    }
-  
-    .tagline {
-      font-size: 1.2rem;
-    }
-  }
+}

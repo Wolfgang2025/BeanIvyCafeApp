@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("/src/images/Bean_and_Ivy_London.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  color: #171313;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* 
+.bohemian-nav {
+  background-color: rgba(107, 66, 38, 0.8);
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+} */
+
+.nav-link {
+  color: #f8f4e9;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d4a574;
+}
+
+.cafe-name {
+  font-family: "Amatic SC", cursive;
+  font-size: 4em;
+  color: #f8f4e9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 60px; /* Adjusted to account for navbar height */
+}
+
+.cursive-heading {
+  font-family: "Amatic SC", cursive;
+  font-size: 3em;
+  color: #f8f4e9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-page,
+.about-us,
+.checkout-page {
+  background-color: rgba(230, 210, 169, 0.8);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us p {
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.menu-intro {
+  font-style: italic;
+  color: #6b4226;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.menu-card {
+  background-color: rgba(71, 62, 62, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-price {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  color: #f5e2d6;
+}
+
+.menu-description {
+  color: #faf7f7;
+  font-size: 0.9em;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.order-button {
+  background-color: #755343;
+  color: #f8f4e9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #8b6246;
+}
+
+.product-page {
+  background-color: rgba(230, 210, 169, 0.8);
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  color: #f8f4f4;
+  margin-bottom: 1rem;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* General footer styling */
+.footer {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(14, 13, 13, 0.85);
+  color: #f8f4e9; /* Light text color for contrast */
+  padding: 25px 0;
+  display: flex;
+  justify-content: center; /* Align links horizontally at the center */
+  align-items: center; /* Vertically align items */
+  position: fixed; /* Keep the footer at the bottom */
+  width: 100%; /* Full width of the page */
+  /* max-width: 1500px; */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Styling for the unordered list (ul) to use flexbox */
+.footer ul {
+  display: flex; /* Enable flexbox */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default bullet points */
+}
+
+/* Styling for each list item (li) to space them out */
+.footer li {
+  margin: 0 20px; /* Add horizontal margin between the links */
+}
+
+/* Link Styling */
+.footer a {
+  text-decoration: none;
+  color: rgba(243, 233, 212, 0.8); /* Light colour for the links */
+  margin: 0 15px; /* Space out links horizontally */
+  font-size: 17px; /* Font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer a:hover {
+  color: #d4a574; /* Lighter color on hover */
+}
+
+/* Optional: Make the footer text larger on mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .footer a {
+    margin: 10px 0; /* Vertical margin between links */
+  }
+}
+
+.contactContainer {
+  /* font-family: "Roboto", sans-serif;
+  color: #d2c7c7; */
+  margin-left: 515px;
+  margin-top: 80px;
+}
+
+.contactContainer p {
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+}

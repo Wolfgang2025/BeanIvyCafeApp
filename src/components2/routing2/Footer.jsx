@@ -7,19 +7,13 @@ export default function Footer() {
       <div>
         <ul>
           <li>
-            <Link to="/orderingtcs">
-              Ordering Terms & Conditions
-            </Link>
+            <Link to="/orderingtcs">Terms & Conditions</Link>
           </li>
           <li>
-            <Link to="/privacypolicy">
-              Policies
-            </Link>
+            <Link to="/privacypolicy">Policies</Link>
           </li>
           <li>
-            <Link to="/contact">
-              Contact Us
-            </Link>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>
