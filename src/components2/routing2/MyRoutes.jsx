@@ -11,27 +11,32 @@ import Contact from "../../pages2/Contact";
 import OrderingTCs from "../../pages2/OrderingTCs";
 import PrivacyPolicy from "../../pages2/PrivacyPolicy";
 import Footer from "./Footer";
+import "../../styles2/styles.css";
 
 const MyRoutes = () => {
   return (
     <>
       <Router>
-        <div>
-          <Navbar />
-        </div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/MenuPage" element={<MenuPage />} />
-          {/* TBR - is the ProductPage still needed and if so, is the path correct? */}
-          <Route path="/product/:id/" element={<ProductPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/orderingtcs" element={<OrderingTCs />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-        </Routes>
-        <div className="footer">
-          <Footer />
+        <div className="router-container">
+          <div className="routes-container">
+            <div>
+              <Navbar />
+            </div>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/MenuPage" element={<MenuPage />} />
+              {/* TBR - is the ProductPage still needed and if so, is the path correct? */}
+              <Route path="/product/:id/" element={<ProductPage />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/orderingtcs" element={<OrderingTCs />} />
+              <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+            </Routes>
+          </div>
+          <div className="footer">
+            <Footer />
+          </div>
         </div>
       </Router>
     </>
