@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@300;400&display=swap");
 
+/* IN USE - KEEP HERE*/
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -11,11 +12,14 @@ body {
   min-height: 100vh;
 }
 
+/* IN USE - KEEP HERE*/
 .App {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
+
+/* NOT IN USE - REMOVE?*/
 /* 
 .bohemian-nav {
   background-color: rgba(107, 66, 38, 0.8);
@@ -27,28 +31,17 @@ body {
   width: 100%;
 } */
 
-.nav-link {
-  color: #f8f4e9;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5em;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #d4a574;
-}
-
-.cafe-name {
+/* NOT IN USE - REMOVE?*/
+/* .cafe-name {
   font-family: "Amatic SC", cursive;
   font-size: 4em;
   color: #f8f4e9;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
-  margin-top: 60px; /* Adjusted to account for navbar height */
-}
+  margin-top: 60px;
+} */
 
+/* IN USE - KEEP HERE*/
 .cursive-heading {
   font-family: "Amatic SC", cursive;
   font-size: 3em;
@@ -56,17 +49,23 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* IN USE - KEEP HERE*/
 .home-page,
 .about-us,
 .checkout-page {
+  position: relative;
+  top: 180px;
+  left: 80px;
+  /* z-index: 1000; */
   background-color: rgba(230, 210, 169, 0.8);
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* IN USE - KEEP HERE*/
 .about-us p {
   font-size: 18px;
   color: #6b4226;
@@ -76,18 +75,21 @@ body {
   padding-left: 20px;
 }
 
+/* IN USE - RENAME and/or MOVE TO MenuPage/MenuItem.css ? */
 .menu-intro {
   font-style: italic;
   color: #6b4226;
   text-align: center;
 }
 
+/* USE - TBC - MOVE TO MenuPage.css ? */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-card {
   background-color: rgba(71, 62, 62, 0.9);
   border-radius: 10px;
@@ -96,10 +98,12 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-card:hover {
   transform: translateY(-5px);
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-image {
   width: 100%;
   height: 200px;
@@ -107,12 +111,14 @@ body {
   border-radius: 10px;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-price {
   font-family: "Amatic SC", cursive;
   font-size: 1.5em;
   color: #f5e2d6;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-description {
   color: #faf7f7;
   font-size: 0.9em;
@@ -124,6 +130,7 @@ body {
   -webkit-box-orient: vertical;
 }
 
+/* USE - TBC - MOVE TO separate css for orders/cart ? */
 .order-button {
   background-color: #755343;
   color: #f8f4e9;
@@ -136,10 +143,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* USE - TBC - MOVE TO separate css for orders/cart ? */
 .order-button:hover {
   background-color: #8b6246;
 }
 
+/* USE - TBC ? */
 .product-page {
   background-color: rgba(230, 210, 169, 0.8);
   max-width: 600px;
@@ -149,6 +158,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* USE - TBC ? */
 .product-image {
   width: 100%;
   max-height: 400px;
@@ -157,81 +167,49 @@ body {
   margin-bottom: 1rem;
 }
 
+/* USE - TBC ? */
 .product-description {
   color: #f8f4f4;
   margin-bottom: 1rem;
 }
 
+/* USE - TBC ? */
 input[type="number"] {
   width: 50px;
   padding: 5px;
   margin-right: 10px;
 }
 
-/* General footer styling */
-.footer {
-  font-family: "Roboto", sans-serif;
-  background-color: rgba(14, 13, 13, 0.85);
-  color: #f8f4e9; /* Light text color for contrast */
-  padding: 25px 0;
+.router-container {
+  /* position: fixed;
+  top: 160px;
+  left: 300px;
   display: flex;
-  justify-content: center; /* Align links horizontally at the center */
-  align-items: center; /* Vertically align items */
-  position: fixed; /* Keep the footer at the bottom */
-  width: 100%; /* Full width of the page */
-  /* max-width: 1500px; */
-  bottom: 0; /* Stick to the bottom */
+  justify-content: space-around;
+  justify-items: flex-start;
+  margin-left: 30px; */
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  gap: 10px; /* Add space between elements */
+}
+.routes-container {
+  /* position: fixed;
+  top: 160px;
+  left: 300px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: flex-start;
+  margin-left: 30px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  gap: 10px; /* Add space between elements */
 }
 
-/* Styling for the unordered list (ul) to use flexbox */
-.footer ul {
-  display: flex; /* Enable flexbox */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  list-style: none; /* Remove default bullet points */
-}
-
-/* Styling for each list item (li) to space them out */
-.footer li {
-  margin: 0 20px; /* Add horizontal margin between the links */
-}
-
-/* Link Styling */
-.footer a {
-  text-decoration: none;
-  color: rgba(243, 233, 212, 0.8); /* Light colour for the links */
-  margin: 0 15px; /* Space out links horizontally */
-  font-size: 17px; /* Font size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.footer a:hover {
-  color: #d4a574; /* Lighter color on hover */
-}
-
-/* Optional: Make the footer text larger on mobile */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-
-  .footer a {
-    margin: 10px 0; /* Vertical margin between links */
+@media (min-width: 400px) {
+  .container {
+    flex-direction: row; /* Align items horizontally on larger screens */
   }
 }
-
-.contactContainer {
-  /* font-family: "Roboto", sans-serif;
-  color: #d2c7c7; */
-  margin-left: 515px;
-  margin-top: 80px;
-}
-
-.contactContainer p {
-  font-size: 18px;
-  color: #6b4226;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  padding-left: 20px;
-}
+/* For the routes container -
+paddingTop: "150px", paddingLeft: "80px"  */

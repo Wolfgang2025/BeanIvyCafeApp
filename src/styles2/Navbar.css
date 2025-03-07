@@ -1,3 +1,4 @@
+/* IN USE (Navbar) - KEEP HERE*/
 .navbar {
   position: fixed;
   top: 20px;
@@ -9,6 +10,8 @@
   align-items: center;
   width: 100%;
   max-width: 155px;
+  /* height: 100%;
+  max-height: 430px; */
   padding: 10px 50px;
   border-radius: 5px;
   background-color: rgba(
@@ -23,12 +26,14 @@
   box-shadow: 0 0 10px rgb(223, 176, 135);
 }
 
+/* NOT IN USE (Navbar) - IF USING FOR THE Navbar logo, UPDATE HERE*/
 /* .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
 } */
 
+/* IN USE (Navbar) - KEEP HERE*/
 .nav-links {
   list-style: none;
   display: flex;
@@ -39,11 +44,13 @@
   padding: 7px;
 }
 
+/* IN USE (Navbar) - KEEP HERE*/
 .nav-links li {
   margin: 0 15px;
   margin-bottom: 20px;
 }
 
+/* IN USE (Navbar) - KEEP HERE*/
 .nav-links a {
   text-decoration: none;
   color: rgba(243, 233, 212, 0.8);
@@ -52,10 +59,12 @@
   transition: color 0.3s ease;
 }
 
+/* IN USE (Navbar) - KEEP HERE*/
 .nav-links a:hover {
   color: #ff6347; /* Tomato color */
 }
 
+/* IN USE (Navbar) - KEEP HERE*/
 .navbar-cafe-name {
   /* font-family: "Amatic SC", cursive; */
   font-family: "Alike", serif;
