@@ -2,11 +2,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles2/Navbar.css"; // We'll add styling for the navbar
+import beansivyLogo from "../../images/beanivylogo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="navbar-cafe-name">Bean & Ivy Cafe</h1>
+      <h1 className="navbar-cafe-name">BEAN & IVY CAFÉ</h1>
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
@@ -21,6 +22,11 @@ const Navbar = () => {
           <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
+      <img
+        src={beansivyLogo}
+        alt="outline of an ivy leaf growing out of a cup"
+        style={{ width: "100%", maxWidth: "45px", height: "auto" }}
+      ></img>
     </nav>
   );
 };
