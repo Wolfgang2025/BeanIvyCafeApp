@@ -114,7 +114,8 @@ function App() {
         }}
       > */}
       <div className="App">
-        <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
+        {/* <div style={{ paddingTop: "150px", paddingLeft: "80px" }}> */}
+        <div>
           {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
           <MyRoutes />
           {/* PayPal Button Container */}
