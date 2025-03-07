@@ -1,0 +1,17 @@
+/* ContactPage box styling - IN USE, BUT may need to move to a ContactPage specific stylesheet*/
+.contactContainer {
+  /* font-family: "Roboto", sans-serif;
+    color: #d2c7c7; */
+  margin-left: 515px;
+  margin-top: 80px;
+}
+
+/* ContactPage box - text styling - IN USE, BUT may need to move to a ContactPage specific stylesheet*/
+.contactContainer p {
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px;
+}
