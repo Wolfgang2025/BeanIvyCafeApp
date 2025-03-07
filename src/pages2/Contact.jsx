@@ -29,7 +29,7 @@ export default function ContactPage() {
       </p>
 
       <div className="contact-form" style={{ padding: "20px", maxWidth: "800px", margin: "0 auto", paddingBottom: "50px" }}>
-        <h2>Contact Information</h2>
+        <h2 className="cursive-heading">Contact Information</h2>
         <p>Email: contact@beanandivy.com</p>
         <p>Phone: +123 456 7890</p>
         <p>Visit us at 123 Coffee Lane, Brewtown.</p>
