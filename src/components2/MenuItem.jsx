@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; /*new code added*/
 import "../styles2/MenuItem.css";
 
 const MenuItem = ({ item, addToCart }) => {
+  const navigate = useNavigate();
+
+  const handleAddToCart = () => {
+    addToCart(item); // Add the item to the cart
+    navigate("/cart"); // Navigate to the cart page
+  };
+
   return (
     <div className="menu-item">
       <img src={item.image} alt={item.name} className="item-image" />
