@@ -8,8 +8,9 @@ import "./styles2/styles.css";
 
 function App() {
   return (
-    <CartProvider>
-      {/* <PayPalScriptProvider
+    <Router>
+      <CartProvider>
+        {/* <PayPalScriptProvider
         options={{
           "client-id":
             "AdVsAfIiMWgcgtgQeyRX6l9o-cVckBXLJ-tgJS3m1HM7sodaLOLMiSqOw67V7K6h_eAcJxEg9nII_pYQ",
@@ -17,19 +18,20 @@ function App() {
           "enable-funding": "venmo,paylater,card",
         }}
       > */}
-      <div className="App">
-        <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
-          {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
-          <MyRoutes />
-          {/* PayPal Button Container */}
-          <div
-            id="paypal-button-container"
-            style={{ margin: "20px auto", maxWidth: "500px" }}
-          ></div>
+        <div className="App">
+          <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
+            {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
+            <MyRoutes />
+            {/* PayPal Button Container */}
+            <div
+              id="paypal-button-container"
+              style={{ margin: "20px auto", maxWidth: "500px" }}
+            ></div>
+          </div>
         </div>
-      </div>
-      {/* </PayPalScriptProvider>  */}
-    </CartProvider>
+        {/* </PayPalScriptProvider>  */}
+      </CartProvider>
+    </Router>
   );
 }
 
