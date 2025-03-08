@@ -49,8 +49,10 @@
 .cart-total {
   background-color: #f8f9fa; /* Example background color */
   padding: 10px; /* Example padding */
+  margin: 30px 20px; /* Top and bottom: 30px, Left and right: 20px */
   border-top: 1px solid #ddd; /* Example border */
-  text-align: right; /* Align text to the right */
+  border-radius: 10px; /* Add rounded corners */
+  text-align: left; /* Align text to the right */
 }
 
 .menu-grid {
