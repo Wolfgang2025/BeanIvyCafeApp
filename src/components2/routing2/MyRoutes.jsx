@@ -19,7 +19,9 @@ const MyRoutes = () => {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/MenuPage" element={<MenuPage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          {/* The path="/menu" matches the to="/menu" in the NavLink.
+              The element={<MenuPage />} specifies that the MenuPage component should be rendered when the /menu path is accessed. */}
           {/* TBR - is the ProductPage still needed and if so, is the path correct? */}
           <Route path="/product/:id/" element={<ProductPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
