@@ -26,3 +26,13 @@
   width: 100%;
   max-width: 300px;
 }
+
+.paypal-buttons > div:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.paypal-buttons > div:focus {
+  outline: 2px solid #0070ba;
+  outline-offset: 2px;
+}
