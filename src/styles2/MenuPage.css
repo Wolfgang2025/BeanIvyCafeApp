@@ -35,6 +35,7 @@
   padding: 10px; /* Example padding */
   margin: 30px 20px; /* Top and bottom: 30px, Left and right: 20px */
   border-bottom: 1px solid #ddd; /* Example border */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 /* Specific styles for cart-items */
