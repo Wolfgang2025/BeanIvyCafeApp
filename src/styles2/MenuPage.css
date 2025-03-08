@@ -31,9 +31,12 @@
 
 /* Specific styles for cart-header */
 .cart-header {
-  background-color: #eeebbc; /* Example background color */
+  background-color: #ffffff; /* Example background color */
   padding: 10px; /* Example padding */
-  margin: 30px 20px; /* Top and bottom: 30px, Left and right: 20px */
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
   border-bottom: 1px solid #ddd; /* Example border */
   border-radius: 10px; /* Add rounded corners */
 }
@@ -49,7 +52,10 @@
 .cart-total {
   background-color: #f8f9fa; /* Example background color */
   padding: 10px; /* Example padding */
-  margin: 30px 20px; /* Top and bottom: 30px, Left and right: 20px */
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
   border-top: 1px solid #ddd; /* Example border */
   border-radius: 10px; /* Add rounded corners */
   text-align: left; /* Align text to the right */
