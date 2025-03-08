@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/MenuPage.jsx">Menu</Link>
+          <Link to="menu">Menu</Link>
         </li>
         <li>
           <Link to="/about">About Us</Link>

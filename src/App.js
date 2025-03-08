@@ -1,4 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+//Use useEffect when you need to perform side effects (e.g., fetching data, updating the DOM, or managing subscriptions).
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+//Use BrowserRouter, Routes, and Route when you need to set up routing in your app (e.g., navigating between pages).
 import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
 import MyRoutes from "./components2/routing2/MyRoutes.jsx";
 import "./styles2/styles.css";
