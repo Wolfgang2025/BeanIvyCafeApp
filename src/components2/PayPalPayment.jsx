@@ -4,7 +4,8 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 const PayPalPayment = () => {
   // PayPal configuration options
   const initialOptions = {
-    "client-id": "YOUR_CLIENT_ID", // Replace with your PayPal Client ID
+    "client-id":
+      "AdVsAfIiMWgcgtgQeyRX6l9o-cVckBXLJ-tgJS3m1HM7sodaLOLMiSqOw67V7K6h_eAcJxEg9nII_pYQ", // Replace with your PayPal Client ID
     currency: "GBP", // Currency code (e.g., GBP, USD, EUR)
     intent: "capture", // Payment intent (capture or authorize)
   };
