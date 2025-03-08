@@ -3,7 +3,7 @@ import Navbar from "../routing2/NavBar"; //The Navbar is rendered above the <Rou
 import HomePage from "../../pages2/HomePage";
 import MenuPage from "../../pages2/MenuPage";
 import ProductPage from "../../pages2/ProductPage";
-import CheckoutPage from "../../pages2/CheckoutPage";
+import CheckoutPage from "../../pages2/CheckoutPage"; // Adjust the import path as needed
 import AboutUs from "../../pages2/AboutUs";
 import Contact from "../../pages2/Contact";
 import OrderingTCs from "../../pages2/OrderingTCs";

@@ -1,5 +1,6 @@
 import React from "react";
 import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
+import { BrowserRouter as Router } from "react-router-dom";
 import MyRoutes from "./components2/routing2/MyRoutes.jsx"; // MyRoutes now handles routing
 import "./styles2/styles.css";
 
