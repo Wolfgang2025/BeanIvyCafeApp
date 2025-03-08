@@ -1,8 +1,5 @@
-import React from "react";
-// import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "../routing2/NavBar"; //importing NavBar from NavBar.jsx to resolve compiled error:
-//Module not found: Error: Can't resolve './Navbar' in '/project/workspace/src/components2/routing2'
+import Navbar from "../routing2/NavBar"; //The Navbar is rendered above the <Routes> component, so it appears on all pages.
 import HomePage from "../../pages2/HomePage";
 import MenuPage from "../../pages2/MenuPage";
 import ProductPage from "../../pages2/ProductPage";

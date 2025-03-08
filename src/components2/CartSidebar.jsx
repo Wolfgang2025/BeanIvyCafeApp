@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles2/CartSidebar.css";
 
-const CartSidebar = ({ isOpen, onClose, cartItems }) => {
+const CartSidebar = ({ isOpen, onClose, cartItems = [] }) => {
+  //Ensures cartItems is always an array, even if empty
   return (
     <div className={`cart-sidebar ${isOpen ? "open" : ""}`}>
       <div className="cart-header">
