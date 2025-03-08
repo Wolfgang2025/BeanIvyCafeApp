@@ -1,6 +1,6 @@
 import React from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import "./PayPal.css"; // Import the CSS file
+import "../styles2/PayPal.css"; // Import the CSS file
 
 const PayPalPayment = ({ totalAmount }) => {
   const initialOptions = {

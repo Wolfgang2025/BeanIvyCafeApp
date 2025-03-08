@@ -1,5 +1,5 @@
 import React from "react";
-import PayPalPayment from "./PayPalPayment";
+import PayPalPayment from "../components2/PayPalPayment";
 
 const CheckoutPage = () => {
   return (
