@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles2/MenuItem.css";
 
-const MenuItem = ({ item, addToCart, cartItems }) => {
+const MenuItem = ({ item, addToCart, cartItems = [] }) => {
   // Find the current quantity of the item in the cart
   const cartItem = cartItems.find((cartItem) => cartItem.id === item.id);
   const initialQuantity = cartItem ? cartItem.quantity : 0;
