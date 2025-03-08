@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 import "../styles2/MenuItem.css";
 
@@ -18,7 +17,7 @@ const MenuItem = ({ item, addToCart, cartItems }) => {
 
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value, 10);
-    if (!isNaN(newQuantity) {
+    if (!isNaN(newQuantity)) {
       setQuantity(newQuantity);
     }
   };
