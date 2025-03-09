@@ -1,35 +1,52 @@
 import React, { useState } from "react";
-import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
-import { BrowserRouter as Router } from "react-router-dom";
-import MyRoutes from "./components2/routing2/MyRoutes.jsx"; // MyRoutes now handles routing
-import MenuItem from "../src/components2/MenuItem.jsx";
-import "./styles2/styles.css";
+import MenuItem from "../src/components2/MenuItem";
 
-function App() {
+const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item, quantity) => {
+    const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
+    if (existingItem) {
+      setCartItems((prevCartItems) =>
+        prevCartItems.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantity: cartItem.quantity + quantity }
+            : cartItem
+        )
+      );
+    } else {
+      setCartItems((prevCartItems) => [
+        ...prevCartItems,
+        { ...item, quantity },
+      ]);
+    }
+  };
+
   return (
-    <CartProvider>
-      {/* <PayPalScriptProvider
-        options={{
-          "client-id":
-            "AdVsAfIiMWgcgtgQeyRX6l9o-cVckBXLJ-tgJS3m1HM7sodaLOLMiSqOw67V7K6h_eAcJxEg9nII_pYQ",
-          currency: "GBP",
-          "enable-funding": "venmo,paylater,card",
+    <div className="App">
+      <h1>Welcome to Bean & Ivy Coffee Shop</h1>
+      <MenuItem
+        item={{
+          id: 1,
+          name: "Fresh Squeezed Juice (Orange/Apple/Guava)",
+          price: 5.99,
+          description: "Freshly squeezed juice made from organic fruits.",
         }}
-      > */}
-      <div className="App">
-        <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
-          {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
-          <MyRoutes /> {/* MyRoutes now handles all routing */}
-          {/* PayPal Button Container */}
-          <div
-            id="paypal-button-container"
-            style={{ margin: "20px auto", maxWidth: "500px" }}
-          ></div>
-        </div>
+        addToCart={addToCart}
+      />
+      <div className="cart">
+        <h2>Cart</h2>
+        {cartItems.map((cartItem) => (
+          <div key={cartItem.id}>
+            <p>
+              {cartItem.name} - {cartItem.quantity} x £
+              {cartItem.price.toFixed(2)}
+            </p>
+          </div>
+        ))}
       </div>
-      {/* </PayPalScriptProvider>  */}
-    </CartProvider>
+    </div>
   );
-}
+};
 
 export default App;
