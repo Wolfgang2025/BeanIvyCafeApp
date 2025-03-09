@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//import "../styles2/MenuItem"; // please check pathing, otherwise, menu items inherit the styling of the parent
 
 const MenuItem = ({ item, addToCart }) => {
   const [quantity, setQuantity] = useState(1);
