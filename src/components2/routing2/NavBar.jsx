@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles2/Navbar.css"; // We'll add styling for the navbar
-import beansivyLogo from "../../images/beanivylogo.png";
+import beansivyLogo from "public/images/beanivylogo.png";
 
 const Navbar = () => {
   return (
