@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutUs() {
   return (
     <div className="about-us">
-      <h1 className="cursive-heading">Our Bohemian Tale</h1>
+      <h1 className="cursive-heading">✨ Our Bohemian Tale 🌿☕</h1>
       <p>
         <strong>Nestled in the heart of London's vibrant streets</strong>, Bean
         & Ivy Cafe sprouted from a dream of creating a haven for free spirits

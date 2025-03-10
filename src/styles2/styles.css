@@ -53,43 +53,51 @@ body {
   flex-direction: column;
   justify-content: flex-end; /* Pushes content to the bottom */
   min-height: 30vh; /* Ensures it only takes up the lower half */
-  padding-top: 2vh; /* Adjusted padding to lower content */
+  padding-top: 0.7vh; /* Adjusted padding to lower content */
   align-items: center; /* Centers items horizontally */
   text-align: center; /* Centers text within the container */
-  background-color: rgba(230, 210, 169, 0.6);
-  max-width: 1500px; /* Adjust width to avoid too much empty space */
+  background-color: rgba(230, 210, 169, 0.5);
+  max-width: 1700px; /* Adjust width to avoid too much empty space */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem 1.5rem; /* Balanced padding for spacing */
+  padding: 2rem 2rem; /* Balanced padding for spacing */
   margin: auto;
   position: absolute;
   bottom: 10vh; /* Positions the box closer to the bottom */
   left: 50%;
   transform: translateX(-50%); /* Centers horizontally */
+  line-height: 1.5; /* Improves readability */
+}
+
+strong {
+  color: #3e2723; /* Dark Espresso Brown */
+  font-weight: 600; /* Slightly bolder for emphasis */
 }
 
 .about-us p {
-  font-size: 18px;
-  color: #6b4226;
+  font-size: 20px;
+  color: #5c4033; /* Deep mocha brown for warm readability */
+  font-weight: 400; /* Ensures standard text weight */
   text-align: left;
   font-family: "Roboto", sans-serif;
-  font-style: italic;
+  font-style: normal;
   padding-left: 20px;
 }
 
 .menu-intro {
-  font-size: 18px;
-  color: #6b4226;
+  font-size: 20px;
+  color: #5c4033; /* Deep mocha brown for warm readability */
+  font-weight: 400; /* Ensures standard text weight */
   text-align: left;
   font-family: "Roboto", sans-serif;
   padding-left: 20px;
 }
 
-.menu-grid {
+/*.menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-}
+}*/ 
 
 .menu-card {
   background-color: rgba(250, 238, 171, 0.9);
@@ -223,18 +231,21 @@ input[type="number"] {
   }
 }
 
-.contactContainer {
-  /* font-family: "Roboto", sans-serif;
-  color: #d2c7c7; */
-  margin-left: 515px;
-  margin-top: 80px;
+.contactContainer p {
+  text-align: left;
+  padding-left: 20px;
 }
 
-.contactContainer p {
-  font-size: 18px;
-  color: #6b4226;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  padding-left: 20px;
+.contact-list {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.contact-list li {
+  font-size: 20px; /* Increases font size */
+  font-weight: 500; /* Slightly bolder for better readability */
+  margin-bottom: 10px; /* Adds spacing between list items */
+  color: #5c4033; /* Deep mocha brown for warm readability */
+  font-family: "Roboto", sans-serif; /* Keeps consistency */
 }

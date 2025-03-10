@@ -9,56 +9,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-}
-
-.cart-icon {
-  cursor: pointer;
-  color: antiquewhite;
-  font-size: 1.5rem;
-  position: relative;
-}
-
-.cart-icon span {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background: #d3b50b; /*new update*/
-  color: white;
-  border-radius: 50%;
-  padding: 3px 8px;
-  font-size: 0.8rem;
-}
-
-/* Specific styles for cart-header */
-.cart-header {
-  background-color: #ffffff; /* Example background color */
-  padding: 10px; /* Example padding */
-  margin-top: 30px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  border-bottom: 1px solid #ddd; /* Example border */
-  border-radius: 10px; /* Add rounded corners */
-}
-
-/* Specific styles for cart-items */
-.cart-items {
-  max-height: 300px; /* Example max height */
-  overflow-y: auto; /* Add scrollbar if content overflows */
-  padding: 10px; /* Example padding */
-}
-
-/* Specific styles for cart-total */
-.cart-total {
-  background-color: #f8f9fa; /* Example background color */
-  padding: 10px; /* Example padding */
-  margin-top: 30px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  border-top: 1px solid #ddd; /* Example border */
-  border-radius: 10px; /* Add rounded corners */
-  text-align: left; /* Align text to the right */
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  color: #f8f4e9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .menu-grid {
@@ -66,3 +20,53 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
+
+/*.cart-icon {
+  cursor: pointer;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  position: relative;
+}*/ /*moved to CartSidebar.css*/
+
+/*.cart-icon span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #d3b50b;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}*
+
+/* Specific styles for cart-header */
+/*.cart-header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+}*/
+
+/* Specific styles for cart-items */
+/*.cart-items {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px; 
+}
+
+/* Specific styles for cart-total */
+/*.cart-total {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border-top: 1px solid #ddd; 
+  border-radius: 10px; 
+  text-align: left;
+}*/
