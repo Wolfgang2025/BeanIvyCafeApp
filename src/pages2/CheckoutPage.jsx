@@ -1,38 +1,28 @@
-import React, { useState } from "react";
-import { useCart } from "../context2/CartContext"; // Use CartContext for global cart state
-import CartSidebar from "../components2/CartSidebar"; // Moved cart sidebar here
-/*import "../styles2/CheckoutPage.css"; // Create a separate checkout page CSS file*/
+import React from "react";
+import { useStripeCart } from "../context2/StripeContext";
 
-const CheckoutPage = () => {
-  const { cartItems } = useCart();
-  const [isCartOpen, setIsCartOpen] = useState(true); // Keep cart open by default
+const Checkout = () => {
+  const { cart } = useStripeCart();
+
+  const handleCheckout = async () => {
+    const response = await fetch("/create-checkout-session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ cart }),
+    });
+
+    const { url } = await response.json();
+    window.location.href = url; // Redirect to Stripe checkout page
+  };
 
   return (
-    <div className="checkout-page">
-      <h1>Checkout</h1>
-      <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
-
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <div className="checkout-items">
-          {cartItems.map((item, index) => (
-            <div key={index} className="checkout-item">
-              <h3>{item.name}</h3>
-              <p>Price: £{item.price.toFixed(2)}</p>
-              <p>Quantity: {item.quantity}</p>
-            </div>
-          ))}
-        </div>
-      )}
+    <div>
+      <h2>Checkout</h2>
+      <button onClick={handleCheckout} disabled={cart.length === 0}>
+        Proceed to Payment
+      </button>
     </div>
   );
 };
 
-export default CheckoutPage;
-
-/* What changed?
-
-Cart sidebar is now only in CheckoutPage.js.
-Users will now go to the checkout page to see their cart.
-Cart updates automatically using useCart().*/
+export default Checkout;
