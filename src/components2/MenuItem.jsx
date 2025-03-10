@@ -1,7 +1,10 @@
 import React from "react";
+import { useStripeCart } from "../context2/StripeContext";
 import "../styles2/MenuPage.css";
 
-const MenuItem = ({ item, addToCart }) => {
+const MenuItem = ({ item }) => {
+  const { addToCart } = useStripeCart();
+
   return (
     <div className="menu-item">
       <img src={item.image} alt={item.name} className="item-image" />
