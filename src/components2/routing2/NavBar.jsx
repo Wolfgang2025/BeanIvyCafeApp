@@ -1,10 +1,10 @@
-// src/components/Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles2/Navbar.css"; // We'll add styling for the navbar
-import beansivyLogo from "public/images/beanivylogo.png";
+import "../../styles2/Navbar.css"; // Navbar styling
 
 const Navbar = () => {
+  const logo = "public/images/bean and ivy.avif"; // ✅ Use a relative path for public images
+
   return (
     <nav className="navbar">
       <h1 className="navbar-cafe-name">BEAN & IVY CAFÉ</h1>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="menu">Menu</Link>
+          <Link to="/menu">Menu</Link>
         </li>
         <li>
           <Link to="/about">About Us</Link>
@@ -22,11 +22,12 @@ const Navbar = () => {
           <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
+      {/* Logo Image */}
       <img
-        src={beansivyLogo}
-        alt="outline of an ivy leaf growing out of a cup"
-        style={{ width: "100%", maxWidth: "45px", height: "auto" }}
-      ></img>
+        src={logo} // ✅ Correct usage of public folder image
+        alt="Outline of an ivy leaf growing out of a cup"
+        className="navbar-logo"
+      />
     </nav>
   );
 };
