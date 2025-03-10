@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles2/MenuItem.css";
+import "../styles2/MenuPage.css";
 
 const MenuItem = ({ item, addToCart }) => {
   return (
