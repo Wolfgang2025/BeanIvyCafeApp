@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* Logo Image */}
       <img
         src={logo} // ✅ Fixed: Corrected path
-        alt="Outline of an ivy leaf growing out of a cup"
+        alt="Outline of a coffee bean and ivy leaf with the words written underneath: Bean & Ivy"
         className="navbar-logo"
       />
     </nav>

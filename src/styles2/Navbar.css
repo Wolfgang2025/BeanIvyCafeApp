@@ -23,13 +23,16 @@
   box-shadow: 0 0 10px rgb(223, 176, 135);
 }
 
-/* .nav-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-} */
+.navbar-logo {
+  width: 100%; /* Auto fit the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures it scales without distortion */
+  padding: 5px; /* Uniform spacing around the logo */
+  margin: auto; /* Centers the logo inside the navbar */
+  display: block; /* Ensures it doesn’t affect inline elements */
+}
 
-.nav-links {
+*/ .nav-links {
   list-style: none;
   display: flex;
   flex-direction: column;
