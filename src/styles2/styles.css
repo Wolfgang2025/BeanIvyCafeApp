@@ -9,14 +9,18 @@ body {
     fixed;
   background-size: cover;
   color: #171313;
-  min-height: 100vh;
+  height: auto;
+  /* min-height: 100vh; */
 }
 
 /* IN USE - KEEP HERE*/
 .App {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  gap: 10px; /* Add space between elements */
 }
 
 /* NOT IN USE - REMOVE?*/
@@ -54,12 +58,14 @@ body {
 .about-us,
 .checkout-page {
   position: relative;
-  top: 180px;
-  left: 80px;
+  top: 15rem;
+  right: 3.5rem;
+  left: 1rem;
   /* z-index: 1000; */
   background-color: rgba(230, 210, 169, 0.8);
+  width: 100%;
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 0;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,12 +73,12 @@ body {
 
 /* IN USE - KEEP HERE*/
 .about-us p {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #6b4226;
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  padding-left: 20px;
+  padding-left: 1.5rem;
 }
 
 /* IN USE - RENAME and/or MOVE TO MenuPage/MenuItem.css ? */
@@ -180,36 +186,54 @@ input[type="number"] {
   margin-right: 10px;
 }
 
-.router-container {
-  /* position: fixed;
-  top: 160px;
-  left: 300px;
+/*ADDED TO App styling code block - REMOVE once responsive layout fixed*/
+/* .router-container {
   display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+} */
+
+.nav-routes-container {
+  display: flex;
+  flex-direction: row; /* Align elements horizontally */
+  gap: 0.8rem; /* Space between items */
+  width: 100%; /* Ensure the container takes full width */
   justify-content: space-around;
-  justify-items: flex-start;
-  margin-left: 30px; */
-  display: flex;
-  flex-direction: column; /* Stack items vertically on smaller screens */
-  gap: 10px; /* Add space between elements */
-}
-.routes-container {
-  /* position: fixed;
-  top: 160px;
-  left: 300px;
-  display: flex;
-  justify-content: space-around;
-  justify-items: flex-start;
-  margin-left: 30px; */
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column; /* Stack items vertically on smaller screens */
-  gap: 10px; /* Add space between elements */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 0; /* Remove any unnecessary padding that could restrict resizing */
+  margin: 0 auto;
 }
 
-@media (min-width: 400px) {
-  .container {
-    flex-direction: row; /* Align items horizontally on larger screens */
+/* .routes-container {
+  display: flex;
+  flex-wrap: wrap; 
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
+} */
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 800px) {
+  /*changed to 800px from 400px*/
+  .routes-container {
+    flex-direction: row; /* Change to row for larger screens */
   }
 }
-/* For the routes container -
-paddingTop: "150px", paddingLeft: "80px"  */
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .nav-routes-container {
+    flex-direction: column; /* Stack elements in a column on smaller screens */
+    align-items: center; /* Center the items if needed */
+    gap: 20px; /* Increase gap for stacked items */
+  }
+}
+
+@media (max-width: 800px) {
+  .home-page,
+  .about-us,
+  .checkout-page {
+    padding-left: 10px; /* Adjust padding on small screens */
+    padding-right: 10px;
+  }
+}
