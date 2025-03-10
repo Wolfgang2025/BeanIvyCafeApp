@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="home-page">
       {/* Welcome Section */}
       <div className="welcome-section text-center mb-6">
         <h1 className="cursive-heading">
@@ -21,17 +21,6 @@ const HomePage = () => {
         </p>
       </div>
 
-      {/* Eclectic Offerings Section */}
-      <div className="text-center mb-4">
-        <h2 className="cursive-heading">✨ Our Eclectic Offerings ✨</h2>
-        <p className="menu-intro">
-          <strong>Indulge</strong> in our carefully curated selection of artisan
-          coffee, handcrafted teas, and irresistible treats—each with a story as
-          rich as its flavour. From bold espresso blends to delicate pastries,
-          every sip and bite is a journey worth savouring.
-        </p>
-      </div>
-
       {/* Call to Action Section */}
       <div className="cta-section text-center">
         <p className="menu-intro">
@@ -39,11 +28,8 @@ const HomePage = () => {
           friendly smiles, and exceptional brews turn your visit into a moment
           of pure joy.
         </p>
-        <p className="menu-intro">
-          <strong>☕ Your perfect cup is waiting at Bean & Ivy!</strong>
-        </p>
       </div>
-    </>
+    </div>
   );
 };
 

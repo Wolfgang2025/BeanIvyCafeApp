@@ -49,12 +49,23 @@ body {
 .home-page,
 .about-us,
 .checkout-page {
-  background-color: rgba(230, 210, 169, 0.8);
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes content to the bottom */
+  min-height: 30vh; /* Ensures it only takes up the lower half */
+  padding-top: 2vh; /* Adjusted padding to lower content */
+  align-items: center; /* Centers items horizontally */
+  text-align: center; /* Centers text within the container */
+  background-color: rgba(230, 210, 169, 0.6);
+  max-width: 1500px; /* Adjust width to avoid too much empty space */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem; /* Balanced padding for spacing */
+  margin: auto;
+  position: absolute;
+  bottom: 10vh; /* Positions the box closer to the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
 }
 
 .about-us p {
@@ -71,7 +82,6 @@ body {
   color: #6b4226;
   text-align: left;
   font-family: "Roboto", sans-serif;
-  font-style: italic;
   padding-left: 20px;
 }
 
@@ -82,7 +92,7 @@ body {
 }
 
 .menu-card {
-  background-color: rgba(71, 62, 62, 0.9);
+  background-color: rgba(250, 238, 171, 0.9);
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
