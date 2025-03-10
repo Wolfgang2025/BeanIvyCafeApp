@@ -55,7 +55,7 @@ body {
   padding-top: 0.7vh; /* Adjusted padding to lower content */
   align-items: center; /* Centers items horizontally */
   text-align: center; /* Centers text within the container */
-  background-color: rgba(230, 210, 169, 0.5);
+  background-color: rgba(236, 223, 196, 0.5);
   max-width: 1700px; /* Adjust width to avoid too much empty space */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,92 +90,6 @@ strong {
   text-align: left;
   font-family: "Roboto", sans-serif;
   padding-left: 20px;
-}
-
-/*.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-}*/
-
-.menu-card {
-  background-color: rgba(250, 238, 171, 0.9);
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.menu-card:hover {
-  transform: translateY(-5px);
-}
-
-.menu-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.menu-price {
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5em;
-  color: #f5e2d6;
-}
-
-.menu-description {
-  color: #faf7f7;
-  font-size: 0.9em;
-  height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-.order-button {
-  background-color: #755343;
-  color: #f8f4e9;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.2em;
-  transition: background-color 0.3s ease;
-}
-
-.order-button:hover {
-  background-color: #8b6246;
-}
-
-.product-page {
-  background-color: rgba(230, 210, 169, 0.8);
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product-image {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.product-description {
-  color: #f8f4f4;
-  margin-bottom: 1rem;
-}
-
-input[type="number"] {
-  width: 50px;
-  padding: 5px;
-  margin-right: 10px;
 }
 
 /* General footer styling */

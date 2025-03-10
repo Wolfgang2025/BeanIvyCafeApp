@@ -39,9 +39,6 @@ const MenuPage = () => {
           <MenuItem key={item.id} item={item} addToCart={addToCart} />
         ))}
       </div>
-
-      {/* Cart Sidebar */}
-      <CartSidebar isOpen={isCartOpen} cartItems={cartItems} />
     </div>
   );
 };
