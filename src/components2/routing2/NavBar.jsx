@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../styles2/Navbar.css"; // Navbar styling
 
 const Navbar = () => {
-  const logo = "public/images/bean and ivy.avif"; // ✅ Use a relative path for public images
+  const logo = "/images/bean and ivy.avif"; // ✅ Correct public folder reference
 
   return (
     <nav className="navbar">
@@ -24,7 +24,7 @@ const Navbar = () => {
       </ul>
       {/* Logo Image */}
       <img
-        src={logo} // ✅ Correct usage of public folder image
+        src={logo} // ✅ Fixed: Corrected path
         alt="Outline of an ivy leaf growing out of a cup"
         className="navbar-logo"
       />
