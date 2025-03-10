@@ -4,8 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: url("/public/images/Bean_and_Ivy_London.png") no-repeat center
-    center fixed;
+  background: url("../images/Bean_and_Ivy_London.png") no-repeat center center
+    fixed;
   background-size: cover;
   min-height: 100vh;
 }
