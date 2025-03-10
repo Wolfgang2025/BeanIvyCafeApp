@@ -7,7 +7,6 @@ body {
   background: url("/src/images/Bean_and_Ivy_London.png") no-repeat center center
     fixed;
   background-size: cover;
-  color: #171313;
   min-height: 100vh;
 }
 
@@ -97,7 +96,7 @@ strong {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-}*/ 
+}*/
 
 .menu-card {
   background-color: rgba(250, 238, 171, 0.9);
