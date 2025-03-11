@@ -46,8 +46,7 @@ body {
 }
 
 .home-page,
-.about-us,
-.checkout-page {
+.about-us {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Pushes content to the bottom */
