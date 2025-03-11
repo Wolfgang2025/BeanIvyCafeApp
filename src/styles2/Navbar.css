@@ -1,15 +1,14 @@
 .navbar {
   position: fixed;
   top: 20px;
-  left: 48px;
-  /* right: 0; */
+  left: 49px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: 155px;
-  padding: 10px 50px;
+  max-width: 11vw;
+  padding: 0 3rem;
   border-radius: 5px;
   background-color: rgba(
     14,
@@ -17,29 +16,33 @@
     13,
     0.99
   ); /* Slightly-transparent background */
-  z-index: 1000;
-  padding-bottom: 55px;
+  padding-bottom: 1.5rem;
   border-color: rgb(16, 16, 16);
   box-shadow: 0 0 10px rgb(223, 176, 135);
 }
 
 .navbar-logo {
   width: 100%; /* Auto fit the width of its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 9rem; /*Added max width to set the max size of the logo*/
+  height: auto; /*Maintain aspect ratio*/
   object-fit: contain; /* Ensures it scales without distortion */
-  padding: 5px; /* Uniform spacing around the logo */
+  padding: 0.4rem; /* Uniform spacing around the logo */
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
   margin: auto; /* Centers the logo inside the navbar */
   display: block; /* Ensures it doesn’t affect inline elements */
+  border-radius: 50%;
 }
 
-*/ .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0;
-  padding: 7px;
+  padding: 0.3rem;
 }
 
 .nav-links li {
@@ -53,18 +56,82 @@
   font-family: "Amatic SC", cursive;
   font-size: 2.2rem;
   transition: color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(246, 240, 240, 0.5);
 }
 
 .nav-links a:hover {
   color: #ff6347; /* Tomato color */
 }
 
-.navbar-cafe-name {
-  /* font-family: "Amatic SC", cursive; */
-  font-family: "Alike", serif;
-  font-size: 1.7rem;
-  color: rgba(243, 233, 212, 0.8);
-  text-shadow: 2px 2px 4px rgba(246, 240, 240, 0.5);
-  text-align: center;
-  margin-bottom: 20px;
+/* Adjust navbar styles for screens smaller than 100px */
+@media (max-width: 900px) {
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-width: 12vw;
+    padding: 0 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(14, 13, 13, 0.99);
+    border-color: rgb(16, 16, 16);
+    box-shadow: 0 0 10px rgb(223, 176, 135);
+    transition: all 0.3s ease;
+  }
+  .nav-links,
+  .nav-links li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0.3rem;
+  }
+}
+
+/* Adjust navbar styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .navbar {
+    position: static; /*or change to top fixed, or however you want the navbar to behave on mobile*/
+    width: 100%;
+    min-width: 90vw;
+    left: 0;
+    top: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .nav-links,
+  .nav-links li {
+    padding: 0.5rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alike", serif;
+  }
+  .navbar-logo {
+    width: 100%;
+    min-width: 12vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    padding: 0.8rem;
+    margin: auto;
+    margin: 0.5rem;
+    object-fit: contain;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
 }
