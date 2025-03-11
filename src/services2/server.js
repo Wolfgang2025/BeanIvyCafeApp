@@ -17,7 +17,7 @@ app.post("/create-checkout-session", async (req, res) => {
           product_data: { name: item.name },
           unit_amount: item.price * 100, // Convert to cents
         },
-        quantity: 1,
+        quantity: item.quantity,
       })),
       mode: "payment",
       success_url: "http://localhost:3000/success",
