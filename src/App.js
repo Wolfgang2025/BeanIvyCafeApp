@@ -17,15 +17,12 @@ function App() {
         }}
       > */}
       <div className="App">
-        <div style={{ paddingTop: "150px", paddingLeft: "80px" }}>
-          {/* <h1 className="text-center mb-4 cafe-name">Bean & Ivy Cafe</h1> */}
-          <MyRoutes /> {/* MyRoutes now handles all routing */}
-          {/* PayPal Button Container */}
-          <div
-            id="paypal-button-container"
-            style={{ margin: "20px auto", maxWidth: "500px" }}
-          ></div>
-        </div>
+        <MyRoutes /> {/* MyRoutes now handles all routing */}
+        {/* PayPal Button Container */}
+        <div
+          id="paypal-button-container"
+          style={{ margin: "20px auto", maxWidth: "500px" }}
+        ></div>
       </div>
       {/* </PayPalScriptProvider>  */}
     </CartProvider>
