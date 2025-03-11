@@ -1,8 +1,18 @@
 import React from "react";
-import { useCart } from "../context2/CartContext"; // Replace with your actual cart context import
+import { useCart } from "../context2/CartContext"; // Ensure correct cart context import
+import { loadStripe } from "@stripe/stripe-js"; // ✅ Fix import issue
+
+const stripePromise = loadStripe(
+  "pk_test_51R1Fk3QvE4dQz98ssrKWTzpenLP3pVy5lCEjduQ27FhRehh7HdZujgKh7UWGIHWgFXzKWj11L7gxLmyflOx6tZ1X00fxWYg01E"
+); // Replace with your actual key
 
 const CheckoutPage = () => {
-  const { cart } = useCart(); // Fetch cart from your global cart management
+  const { cart = [] } = useCart() || {}; // Ensure cart is an array
+
+  // Calculate total order value
+  const total = cart
+    .reduce((sum, item) => sum + item.price * item.quantity, 0)
+    .toFixed(2);
 
   const handleCheckout = async () => {
     try {
@@ -34,8 +44,9 @@ const CheckoutPage = () => {
               </li>
             ))}
           </ul>
+          <h3>Total: £{total}</h3>
           <button onClick={handleCheckout} disabled={cart.length === 0}>
-            Proceed to Payment
+            Pay with Stripe
           </button>
         </>
       )}
