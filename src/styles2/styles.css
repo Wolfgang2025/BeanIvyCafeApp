@@ -55,7 +55,7 @@ body {
   padding-top: 0.7vh; /* Adjusted padding to lower content */
   align-items: center; /* Centers items horizontally */
   text-align: center; /* Centers text within the container */
-  background-color: rgba(236, 223, 196, 0.5);
+  background-color: rgba(245, 234, 213, 0.5);
   max-width: 1700px; /* Adjust width to avoid too much empty space */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
