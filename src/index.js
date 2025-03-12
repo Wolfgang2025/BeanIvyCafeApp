@@ -1,15 +1,13 @@
 // src/index.js
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom"; // ✅ Use 'react-dom' instead of 'react-dom/client'
 import App from "./App"; // ✅ Correct import path for App
 import "./styles2/styles.css"; // ✅ Correct import path for CSS
 
-// Create a root for ReactDOM
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
 // Render the App component inside React.StrictMode
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App /> {/* ✅ This should now work */}
-  </React.StrictMode>
+    <App /> {/* ✅ This will now work with React 17 */}
+  </React.StrictMode>,
+  document.getElementById("root") // ✅ Mount the app to the 'root' element
 );
