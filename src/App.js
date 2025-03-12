@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { CartProvider } from "./context2/CartContext.jsx"; // Import CartProvider
 import { BrowserRouter as Router } from "react-router-dom";
 import MyRoutes from "./components2/routing2/MyRoutes.jsx"; // MyRoutes now handles routing
-import MenuItem from "../src/components2/MenuItem.jsx";
+import { CartProvider } from "../src/context2/CartContext.jsx"; // ✅ Ensure correct import
+import MenuItem from "../src/components2/MenuItem.jsx"; // ✅ Adjust the path if needed
 
 import "./styles2/styles.css";
 

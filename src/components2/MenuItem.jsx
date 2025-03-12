@@ -1,9 +1,10 @@
 import React from "react";
-import { useStripeCart } from "../context2/StripeContext";
+import { useContext } from "react";
+import { useCart } from "../context2/CartContext"; // ✅ Correct import
 import "../styles2/MenuPage.css";
 
 const MenuItem = ({ item }) => {
-  const { addToCart } = useStripeCart();
+  const { addToCart } = useCart(); // ✅ Ensure you're using useCart()
 
   return (
     <div className="menu-item">
