@@ -1,0 +1,187 @@
+[33m83f7a5f[m[33m ([m[1;36mHEAD -> [m[1;32mmain_old[m[33m)[m Add files via upload (#30)
+[33m00b8dfb[m Create .env
+[33m5772e20[m[33m ([m[1;31morigin/rasikachettri-finalmenu-checkout[m[33m)[m Add files via upload
+[33m837f64f[m Bean and Ivy updated
+[33m28b07c3[m Merge branch 'main' of https://github.com/Wolfgang2025/BeanIvyCafeApp
+[33m6842864[m Changes: server-side
+[33mf9aa667[m bean_and_ivy_updated.png
+[33m8f65d75[m[33m ([m[1;31morigin/Wolfgang2025-patch-8[m[33m)[m Changes: styles.css, CheckoutPage.css, CheckoutPage.jsx, create-check-out-session.js, CheckoutButton.jsx, Cart.jsx, App.js
+[33m3efc8f0[m Changes: server.js, CheckOutPage.jsx, StripeCheckout.jsx, Cart.jsx, App.js
+[33m15d6b4b[m Changes: server.js, CheckoutPage.jsx, package.json
+[33m4b9258e[m Changes: PayPal.css (deleted file), styles.css
+[33m056929b[m Changes: App.js, StripeCheckout.jsx, CheckoutPage.jsx
+[33m4d3f20b[m Changes: server.js, stripe.env, App.js, StripeCheckout.jsx, CheckoutPage.jsx
+[33mfd25399[m Changes: App.js, server.js, stripe.env
+[33mb635fca[m Changes: CheckoutPage.jsx
+[33m4fafca6[m Changes: StripeContext.jsx, MenuItem.jsx
+[33m2f23166[m Changes: MenuPage.jsx, MenuPage.css, styles.css
+[33m27617f5[m Changes: deleted duplicates
+[33mf34bc77[m Changes: MenuItem.jsx, MenuPage.jsx, MenuPage.css
+[33mc162cdb[m Moved images folder under src (#27)
+[33m484b71d[m[33m ([m[1;31morigin/draft/zealous-chatterjee[m[33m)[m Moved images folder under src
+[33maa3272c[m Update menuData.jsx
+[33m7ef4e1b[m Update MenuItem.css
+[33m4c32bae[m Update MenuItem.jsx
+[33mbe3a47b[m Update MenuPage.css
+[33m8404dc6[m Update MenuPage.jsx
+[33mb1dec80[m Add files via upload (#26)
+[33mb39bc2a[m[33m ([m[1;31morigin/fixed-menu-pages[m[33m)[m Add files via upload
+[33m063f134[m Changes: NavBar.jsx, NavNar.css
+[33m4a62a6f[m Changed the logo to Amna's design
+[33m3539e3a[m Changes: bean and ivy.avif logo, NavBar.jsx, styles.css
+[33m6541619[m Images folder: moved them to public folder
+[33mf1c7af1[m Images folder: moved them back to public folder
+[33me1c92df[m Changes: CheckoutPage.jsx,MenuPage.jsx,CartSidebar.css, HomePage.css, MenuItem.css, styles.css
+[33m210e0bf[m Changes: AboutUs.jsx, Contact.jsx, CartSidebar.css, MenuPage.css, styles.css
+[33m0714ded[m Updated: AboutUs.jsx, HomePage.jsx, styles.css
+[33m5fcb987[m HomePageR deleted, HomePage.jsx, HomPage.css, styles.css updated
+[33m0911662[m Contact.jsx: updated details
+[33mb53640c[m Contact.jsx: updated contact details
+[33m6fa47a3[m App.js: reverted back to commit: https://github.com/Wolfgang2025/BeanIvyCafeApp/commit/4d94db602cfbe213be66514d732f3aeaa417d8fa
+[33m27d8e51[m App.js: updated add to cart logic
+[33me749bc1[m MenuItem.jsx: updated add to cart logic
+[33m4d94db6[m App.js: updated menu routing logic: line 5
+[33m7cccc32[m App.js: added new code: line 3
+[33m174ddca[m Paypal.css and PayPalPayment.jsx updates
+[33m390b2cb[m PayPal.css: new style file added
+[33mf9aebd3[m PayPalPayment.jsx: Client ID (sandbox) provided
+[33m4e3fdf4[m PayPalPayment.jsx: new component added
+[33m8bf5544[m package.json: added Paypal dependies: lines 14 and 15
+[33md2088ad[m MenuItem.jsx: final working code without prop types
+[33m19e201d[m MenuItem.jsx: fixed parsing errors and import statements
+[33md085ced[m Updated MenuItem.jsx
+[33m037a6c1[m MenuItem.jsx: added navigation to checkout page: lines 6 and 10
+[33maf4b124[m MenuItem.jsx: added new lines of code: lines 5 to 11
+[33m073bed3[m MenuItem.css: added new lines of code: lines 7 to 10
+[33m445d562[m MenuItem.css: edited line 4, updated lines 15 to 19
+[33m5d21b00[m MenuPage.css: edited cart items and cart total styling
+[33m36f7bfd[m MenuPage.css: edited lines 52, 54, 55
+[33ma4d809d[m MenuPage.css: added line 38
+[33m6537ff5[m MenuPage.css: edited line 34
+[33mc058a31[m MenuPage.css: edited line 36
+[33m2cc135d[m MenuPage.css: edited cart header padding.
+[33me332039[m MenuPage.css: added new codes (lines 32 to 52)
+[33m3561250[m MenuPage.css: updated line 8 and 25.
+[33m0b84f00[m MyRoutes.jsx: edited line 22 defining the menu element as MenuPage.jsx
+[33m5ab0c99[m Cartsidebar.jsx: edited Line 4 ensuring cartItems is always an array even when empty.
+[33m54aec37[m Updated App.js without <router> wrapper.
+[33m5d13efd[m App.js: Wrapped entire app in a <BrowserRouter> (or <Router>) component to enable routing.
+[33mb29a811[m Updated BrowserRouter and use import statements for App.js
+[33m0f9f138[m Deleted unnecessary PayPal code in App.js
+[33m0b2a3ff[m NavBarH.jsx file deleted (see commits to retrieve code)
+[33m33f5014[m Line 4 changes (temporary) to MyRoutes.jsx
+[33me90a5e8[m moved files to new images location
+[33m4100c66[m move image to new folder location
+[33m5f1a2d2[m move image to new folder location
+[33me60300c[m move image to new folder location
+[33m13e0346[m move image to new folder location
+[33m649de1b[m move image to new folder location
+[33m7e0a5fb[m move image to new folder location
+[33m1573c9c[m move image to new folder location
+[33mfa527fe[m move image to new folder location
+[33m2c88221[m move image to new folder location
+[33mdfb8e0e[m move image to new folder location
+[33m1a3b6a8[m move image to new folder location
+[33me3ea547[m move image to new folder location
+[33ma7ea0a3[m move image to new folder location
+[33mcba00f1[m move image to new folder location
+[33m56d0ace[m add beanivy logo sample
+[33m00069af[m Z navbar myroutes update (#25)
+[33m7b8f3ab[m[33m ([m[1;31morigin/z_navbar-myroutes-update[m[33m)[m move image files to src
+[33m2353f8c[m updated styling
+[33m44886b0[m updated cafe name title
+[33me4a1632[m updated MenuPage path
+[33mb94b502[m added new font import
+[33mdfb94b7[m commented out navbarH file - ref only
+[33m8ec0505[m renamed server.js file
+[33m1ef6507[m renamed and updated main stylesheet
+[33m9b73efe[m updated policy page
+[33m1437561[m updated contact page
+[33m5719e37[m updated homepage stylesheet
+[33m294942e[m updated footer jsx
+[33m683f0ae[m updated myroutes file
+[33ma838f2c[m updated navbar v2 stylesheet
+[33m3d8dbc8[m organise navbar files
+[33m83ede8f[m moved navbar under components
+[33m5648d33[m updated styles css path
+[33m756ee74[m Removed navbar and footer and updated styling
+[33mb262b8e[m Updated MenuPage.jsx
+[33mcbb7e8d[m Made the Oldstyles.css live as it was commented out.
+[33m56b5eb7[m 06/03 Zane merge
+[33mc639ebc[m[33m ([m[1;31morigin/filelocation-path-updates[m[33m)[m Updated import and route paths
+[33m2a8734a[m Re-added H homepage (v1)
+[33m6d972ce[m Commented out paypal functionality
+[33m1fa6c62[m updated import paths
+[33m994d7c6[m renamed file and update imports
+[33m772f8a8[m comment out image ref
+[33m73ba71c[m updated import paths
+[33m817fb1e[m moved routing folder under components
+[33m01491f4[m Updated  import paths for routing files
+[33m2a57c0e[m CartSidebar updated css import path
+[33m8a051ae[m updates to App.js and index.js
+[33m3641d84[m Merge branch 'main' of https://github.com/Wolfgang2025/BeanIvyCafeApp
+[33m0354cc6[m Refactored our folder structure for version 2.0
+[33m42e406b[m Create Presentation Deck
+[33mdc09362[m Update and rename Ideal Folder Structure to Final Folder Structure (#22)
+[33m976dc49[m Create Proposed Folder Structure (#21)
+[33m6178003[m[33m ([m[1;31morigin/Wolfgang2025-patch-6[m[33m)[m Create Proposed Folder Structure
+[33m00b9db4[m Update README.md
+[33m097a60f[m Update README.md (#20)
+[33mc804810[m Update README.md
+[33mde303df[m Draft/twilight haze (#19)
+[33m1362b1d[m Create Ideal Folder Structure (#18)
+[33m9fe143a[m[33m ([m[1;31morigin/Wolfgang2025-patch-5[m[33m)[m Create Ideal Folder Structure
+[33m008ec55[m[33m ([m[1;31morigin/draft/twilight-haze[m[33m)[m Deleted old HomePage.jsc permanently. We will use Rasika's homepage.jsx
+[33mc9183f6[m Put all images in public/images folder
+[33mb2d974f[m Updated App.js with Rasika's code.
+[33m41f16db[m latest commit.
+[33mf004841[m Updated the MenuPage.jsx
+[33ma5f7aa6[m Updated App.js
+[33m238b033[m Added CartContext.jsx as a component
+[33m272abb3[m Updated server.js
+[33m48f547c[m Merged and updated app.js
+[33mb2da901[m Updated the index.html to integrate paypal checkout api.
+[33m9dd90cc[m Push to merge with package.json
+[33m698920b[m Pushing updated checkout page
+[33mb830ee4[m Background, colourschemes, etc changes. Double check with Rasika.
+[33m4f37e2f[m Added file Bean_and_Ivy_London (#17)
+[33m68a89cc[m[33m ([m[1;31morigin/Wolfgang2025-patch-4[m[33m)[m Added file via upload
+[33m2345d4d[m Rename cafe6.jpg to public/images/cafe6.jpg (#16)
+[33m751a37a[m[33m ([m[1;31morigin/Wolfgang2025-patch-3[m[33m)[m Rename cafe6.jpg to public/images/cafe6.jpg
+[33m1a2fe17[m Add files via upload (#15)
+[33m67d23c6[m[33m ([m[1;31morigin/Wolfgang2025-patch-2[m[33m)[m Add files via upload
+[33mda913e4[m Rename Updated App.js with PayPal Provider to Updated (with PayPal Pr… (#14)
+[33m8fb64a3[m[33m ([m[1;31morigin/Wolfgang2025-patch-1[m[33m)[m Rename Updated App.js with PayPal Provider to Updated (with PayPal Provider) App.js
+[33m9210d6f[m Create updated_package2.json (#13)
+[33m8fe68cb[m[33m ([m[1;31morigin/zcopycat-updated-package2-json[m[33m)[m Create updated_package2.json
+[33m4c5cf10[m Create updated_package.json
+[33m198233d[m Add files via upload (#12)
+[33mc85c2f0[m Create PayPalButton.jsx (#11)
+[33m5f83131[m Create Updated server.js (#10)
+[33m9e2e0a0[m Create package.json proxy update (#9)
+[33ma04fced[m Create Updated App.js with PayPal Provider (#8)
+[33m3ae165b[m Create CheckoutPage.jsx (updated) (#7)
+[33m7233822[m Create Integrate the PayPalButton component into your App.js (#6)
+[33m5d111fb[m Integrate PayPal instructions (#4)
+[33m32be0c6[m Manually added a new component via file upload (#3)
+[33mcebdd7a[m[33m ([m[1;31morigin/rasikachettri-patch-1[m[33m)[m Add files via upload
+[33mb1fcae8[m[33m ([m[1;31morigin/Create-PayPalButton.jsx[m[33m)[m Create PayPalButton.jsx
+[33m8604c17[m[33m ([m[1;31morigin/Create-Updated-server.js[m[33m)[m Create Updated server.js
+[33me2ffca8[m[33m ([m[1;31morigin/Create-package.json-proxy-update[m[33m)[m Create package.json proxy update
+[33mc8260ad[m[33m ([m[1;31morigin/Create-updated-App.js-with-PayPal-Provider[m[33m)[m Create Updated App.js with PayPal Provider
+[33m5f035ee[m[33m ([m[1;31morigin/Create-CheckoutPage.jsx-(updated)[m[33m)[m Create CheckoutPage.jsx (updated)
+[33me58e55f[m[33m ([m[1;31morigin/Integrate-the-PayPalButton-component-into-your-App.js[m[33m)[m Create Integrate the PayPalButton component into your App.js
+[33m1e0b8c4[m[33m ([m[1;31morigin/PaypalButton.js[m[33m)[m Update PaypalButton.js
+[33m5d579a9[m[33m ([m[1;31morigin/Integrate-PayPal-instructions[m[33m)[m Integrate PayPal instructions
+[33m01fc8e1[m Manually added a new component via file upload
+[33m551786b[m Footer update
+[33mafc9fb6[m Added index.html file to public folder (#1)
+[33m2de9d5c[m[33m ([m[1;31morigin/Footer[m[33m)[m Updated App.js with Footer
+[33m886e23e[m Upadated styles
+[33mb3d7a03[m Updated MyRoutes with Footer
+[33m0474c64[m Added new Footer component
+[33mf091f4a[m Added OrderingTCs page
+[33ma2c230b[m Added PrivacyPolicy page
+[33m3009c08[m[33m ([m[1;31morigin/Indexhtml[m[33m)[m Added index.html file to public folder
+[33m3d60e77[m Initial commit
+[33mbd32ab1[m Initial commit
