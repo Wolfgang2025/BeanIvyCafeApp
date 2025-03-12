@@ -18,7 +18,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PORT = 8080 } = process.env;
+const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PORT = 5000 } = process.env;
 
 const client = new Client({
   clientCredentialsAuthCredentials: {
