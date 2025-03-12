@@ -5,7 +5,6 @@ import { menuItems } from "../data2/menuData";
 import MenuItem from "../components2/MenuItem";
 import "../styles2/MenuPage.css";
 
-
 const MenuPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -17,7 +16,7 @@ const MenuPage = () => {
   return (
     <div className="menu-page">
       <div className="menu-header">
-        <h1>Our Menu</h1>
+        <h2>Our Menu</h2>
         <div className="cart-icon" onClick={() => setIsCartOpen(!isCartOpen)}>
           🛒 {cartItems.length > 0 && <span>{cartItems.length}</span>}
         </div>

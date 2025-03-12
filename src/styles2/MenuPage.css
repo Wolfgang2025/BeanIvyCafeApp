@@ -1,20 +1,29 @@
 .menu-page {
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
-  
 }
 
 .menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  color: #f8f4e9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cart-icon {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
+  right: 6vw;
+  background-color: #f8f4e9;
+  background-size: 4rem;
+  border-width: 3rem;
+  padding: 0.5rem;
+  border-radius: 30%;
 }
 
 .cart-icon span {
@@ -32,7 +41,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .menu-item {
@@ -40,7 +49,7 @@
   border-radius: 10px;
   overflow: hidden;
   text-align: left; /* Left-align text inside the menu item */
-  background-color:  rgba(230, 210, 169, 0.8); 
+  background-color: rgba(230, 210, 169, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -95,5 +104,5 @@
 }
 
 .add-to-cart-btn:hover {
-  background:#a88c6f;;
+  background: #a88c6f;
 }
