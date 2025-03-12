@@ -1,21 +1,19 @@
 import React from "react";
-import { useStripeCart } from "../context2/StripeContext";
-import "../styles2/MenuPage.css";
+import { useCart } from "../context2/CartContext"; // Import global cart context
 
 const MenuItem = ({ item }) => {
-  const { addToCart } = useStripeCart();
+  const { cartItems, setCartItems } = useCart();
+
+  const addToCart = () => {
+    setCartItems([...cartItems, item]); // ✅ Add item to global cart
+  };
 
   return (
-    <div className="menu-item">
-      <img src={item.image} alt={item.name} className="item-image" />
-      <div className="item-details">
-        <h3 className="item-name">{item.name}</h3>
-        <p className="item-price">£{item.price.toFixed(2)}</p>
-        <p className="item-description">{item.description}</p>
-        <button className="add-to-cart-btn" onClick={() => addToCart(item)}>
-          Add to Cart
-        </button>
-      </div>
+    <div>
+      <h3>
+        {item.name} - £{(item.price / 100).toFixed(2)}
+      </h3>
+      <button onClick={addToCart}>Add to Cart</button>
     </div>
   );
 };

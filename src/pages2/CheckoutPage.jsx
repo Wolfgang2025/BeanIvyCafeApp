@@ -1,31 +1,50 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import "../styles2/CheckoutPage.css"; // Import the CSS file
+import { useCart } from "../context2/CartContext"; // Import Global Cart Context
+import "../styles2/CheckoutPage.css"; // Import Styles
 
 const CheckoutPage = () => {
-  const location = useLocation();
-  const cartItems = location.state?.cartItems || [
-    { name: "Espresso", price: 250, quantity: 1 },
-    { name: "Muffin", price: 350, quantity: 2 },
-    { name: "Sandwich", price: 500, quantity: 1 },
-  ]; // Default sample items if none are passed
+  const { cartItems } = useCart(); // ✅ Get Cart Items from Global Context
 
-  // Calculate total price in GBP (£)
+  if (!cartItems || cartItems.length === 0) {
+    return (
+      <h2 className="empty-cart">
+        Your cart is empty! Please add items before checkout.
+      </h2>
+    );
+  }
+
   const totalAmount =
     cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0) / 100;
 
   const handleCheckout = async () => {
-    const response = await fetch(
-      "http://localhost:5000/create-checkout-session",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cartItems }), // Send cart items to backend
-      }
-    );
+    try {
+      console.log("🔹 Sending cart items:", cartItems);
 
-    const { url } = await response.json();
-    window.location.href = url; // Redirect to Stripe Checkout page
+      const response = await fetch(
+        "https://vrdv22-5000.csb.app/create-checkout-session",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ cartItems }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const { url } = await response.json();
+      console.log("✅ Redirecting to Stripe Checkout:", url);
+
+      if (url) {
+        window.location.href = url;
+      } else {
+        throw new Error("Stripe checkout URL is missing in response.");
+      }
+    } catch (error) {
+      console.error("❌ Error during checkout:", error);
+      alert(`Failed to proceed to payment: ${error.message}`);
+    }
   };
 
   return (

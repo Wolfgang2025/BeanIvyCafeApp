@@ -1,53 +1,40 @@
-/* Checkout Container */
+/* Container Styling */
 .checkout-container {
   max-width: 500px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: rgba(250, 239, 217, 0.7); /* Added background color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+  background-color: #fff;
 }
 
-/* Checkout Title */
+/* Title */
 .checkout-title {
   text-align: center;
-  margin-bottom: 1rem; /* Added spacing */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* Checkout Table */
+/* Table Styling */
 .checkout-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-/* Table Header */
 .table-header {
   border-bottom: 2px solid black;
 }
 
-/* Table Columns */
 .item-column,
 .quantity-column,
 .price-column {
+  text-align: left;
   padding: 8px;
 }
 
-.item-column {
-  text-align: left;
-}
-
-.quantity-column {
-  text-align: center;
-}
-
-.price-column {
-  text-align: right;
-}
-
-/* Table Rows */
-.table-row {
+tbody .table-row {
   border-bottom: 1px solid #ddd;
 }
 
@@ -57,18 +44,11 @@
   padding: 8px;
 }
 
-.item-quantity {
-  text-align: center;
-}
-
-.item-price {
-  text-align: right;
-}
-
 /* Total Amount */
 .total-amount {
   text-align: right;
-  margin-top: 1rem; /* Added spacing */
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Checkout Button */
@@ -82,30 +62,16 @@
   cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
-  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 .checkout-button:hover {
   background-color: #0056b3;
 }
 
-/* Checkout Page Layout */
-.checkout-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Pushes content to the bottom */
-  min-height: 30vh; /* Ensures it only takes up the lower half */
-  align-items: center; /* Centers items horizontally */
-  text-align: center; /* Centers text within the container */
-  background-color: rgba(250, 239, 217, 0.7);
-  max-width: 1700px; /* Adjust width to avoid too much empty space */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem; /* Balanced padding for spacing */
-  margin: auto;
-  position: absolute;
-  bottom: 10vh; /* Positions the box closer to the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Centers horizontally */
-  line-height: 1.5; /* Improves readability */
+/* Empty Cart Message */
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
 }
