@@ -1,0 +1,29 @@
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin: 2rem auto; /* Center the block and add some margin */
+  max-width: 85%; /* Use percentage for responsiveness */
+  /* Remove the bottom, left, and transform properties */
+  background-color: rgba(230, 210, 169, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.contact-list li {
+  font-size: 20px; /* Increases font size */
+  font-weight: 500; /* Slightly bolder for better readability */
+  margin-bottom: 10px; /* Adds spacing between list items */
+  color: #5c4033; /* Deep mocha brown for warm readability */
+  font-family: "Roboto", sans-serif; /* Keeps consistency */
+}
