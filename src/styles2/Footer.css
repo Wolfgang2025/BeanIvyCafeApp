@@ -1,0 +1,53 @@
+/* Footer box styling - IN USE - KEEP */
+.footer {
+  background-color: rgba(14, 13, 13, 0.85);
+  padding: 25px 0;
+  display: flex;
+  justify-content: center; /* Align links horizontally at the center */
+  align-items: center; /* Vertically align items */
+  position: fixed; /* Keep the footer at the bottom */
+  left: 0;
+  right: 0;
+  width: 100%; /* Full width of the page */
+  /* max-width: 1500px; */
+  bottom: 0; /* Stick to the bottom */
+}
+
+/* Styling for the unordered list (ul) to use flexbox - IN USE - KEEP*/
+.footer ul {
+  display: flex; /* Enable flexbox */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove default bullet points */
+}
+
+/* Styling for each list item (li) to space them out - IN USE - KEEP*/
+.footer li {
+  margin: 0 20px; /* Add horizontal margin between the links */
+}
+
+/* Link Styling - IN USE - KEEP*/
+.footer a {
+  text-decoration: none;
+  color: rgba(243, 233, 212, 0.8); /* Light colour for the links */
+  margin: 0 15px; /* Space out links horizontally */
+  font-family: "Roboto", sans-serif;
+  font-size: 17px; /* Font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link Styling - IN USE - KEEP*/
+.footer a:hover {
+  color: #d4a574; /* Lighter color on hover */
+}
+
+/* Make the footer text larger on mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .footer a {
+    margin: 10px 0; /* Vertical margin between links */
+  }
+}
