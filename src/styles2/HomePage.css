@@ -1,3 +1,4 @@
+
 /* REDUNDANT STYLING _ REMOVE OR ADD backround image? */
 /* .home-page {
   height: 100vh;
@@ -13,7 +14,7 @@
   text-align: center;
   position: relative;
 } */
-
+/*
 .home-page::before {
   content: "";
   position: absolute;
@@ -21,9 +22,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-  z-index: 1;
-}
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+  /* }
 
 .hero-section {
   position: relative;
@@ -41,7 +42,8 @@
   font-style: italic;
 }
 
-/* Responsive adjustments */
+
+/* Responsive adjustments /*
 @media (max-width: 768px) {
   .logo {
     font-size: 3rem;
@@ -49,5 +51,80 @@
 
   .tagline {
     font-size: 1.2rem;
+  }
+}
+
+/* Add your CSS styles here */
+
+/* styles.css */
+
+/* Overall page styling */
+/* styles.css */
+
+/* Overall page styling */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width:80%;
+  background-color: rgba(103, 83, 70, 0.8); /* Light gray background */
+  padding: 20px;
+  margin-top: 0 auto; /* Account for the fixed navbar */
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.home-page {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Welcome box */
+.welcome-box {
+  background-color: rgb(107, 66, 38, 0.8); /* Brownish background */
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.welcome-box h2 {
+  font-size: 2.25rem; /* 36px font size */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.welcome-box p {
+  font-size: 1.125rem; /* 18px font size */
+}
+
+/* Hello! message */
+.hello-message {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  rgb(186, 134, 99); /* Yellow color */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem; /* 20px font size */
+  font-weight: bold;
+  animation: bounce 1s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
   }
 }

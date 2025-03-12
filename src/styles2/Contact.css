@@ -3,19 +3,37 @@
 .contact {
   font-family: "Roboto", sans-serif;
   color: #d2c7c7;
+  padding-left: 200px; /* Adjust based on the width of the navbar */
+}
+
+
+@media (max-width: 768px) {
+  .contact {
+    padding-left: 0;
+    padding-top: 60px; /* Adjust based on the height of the navbar */
+  }
 }
 
 /* Add these styles in your CSS file */
 
 /* Styles for the white box container */
 .contact-form-container {
-  padding: 20px;
-  max-width: 800px;
+  padding: 10px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+newsletter-section {
+  margin-top: 90px; /* Add gap between contact details and newsletter section */
+
+}
+
+
+.feedback-section {
+  margin-top: 40px;} /* Add gap between newsletter section and feedback section */
 
 .buttons-container {
   display: flex;
@@ -23,13 +41,24 @@
   margin-top: 10px; /* Add space between the textarea and button */
 }
 
-.email-input, .feedback-input {
-  width: 70%; /* Reduced width */
+.email-input {
+  width: 50%; /* Reduced width */
   padding: 6px; /* Reduced padding */
   margin: 10px 0;
   border-radius: 4px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+.feedback-input {
+  width: 60%; /* Make it take full width */
+  height: 150px; /* Increase height */
+  padding: 10px; /* Increase padding for better spacing */
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical; /* Allows the user to resize the box vertically */
 }
 
 /* Ensure the label appears above the input fields */
@@ -41,24 +70,41 @@ label {
 /* Styling for the submit buttons */
 .submit-button {
   padding: 8px 16px;
-  background-color: #1071d9;
+  
+  background-color:rgb(107, 66, 38, 0.8);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   width: auto; /* Ensure button takes only as much width as necessary */
-  margin-top: 20px; /* Move the Submit button slightly down */
+  margin-top: 10px; /* Move the Submit button slightly down */
 }
 
 
 .submit-button:hover {
-  background-color: #085ba0;
+  background-color:  rgb(107, 66, 38, 0.8);
 }
 
 /* Basic styling for the headings and paragraph texts */
-h1, h2, h3 {
-  font-family: 'Georgia', serif;
+h1, h2 ,li,label,strong{
+  font-size: 18px;
+  color: #6b4226;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px
 }
+
+  h3{
+    font-size: 18px;
+  color: hsl(24, 61%, 26%);
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  padding-left: 20px
+
+  }
+
 
 p {
   font-size: 1rem;

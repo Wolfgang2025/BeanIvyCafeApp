@@ -16,6 +16,8 @@ const MyRoutes = () => {
   return (
     <>
       <Router>
+             <div className="router-container">
+      <div className="routes-container">
         <div>
           <Navbar />
         </div>
@@ -33,6 +35,8 @@ const MyRoutes = () => {
         <div className="footer">
           <Footer />
         </div>
+      </div>
+      </div>
       </Router>
     </>
   );

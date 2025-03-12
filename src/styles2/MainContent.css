@@ -1,0 +1,11 @@
+/* Add padding to the main content to prevent overlap */
+.main-content {
+    padding-left: 220px; /* Adjust based on the width of the navbar */
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding-left: 0;
+      padding-top: 60px; /* Adjust based on the height of the navbar */
+    }
+  }

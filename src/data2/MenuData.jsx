@@ -1,21 +1,4 @@
-// simport React from "react";
-
-const MenuItem = ({ item, addToCart }) => {
-  return (
-    <div className="menu-item">
-      <img src={item.image} alt={item.name} className="menu-item-image" />
-      <h3>{item.name}</h3>
-      <p className="menu-item-description">{item.description}</p>
-      <p className="menu-item-price">£{item.price.toFixed(2)}</p>
-      <button className="add-to-cart-button" onClick={() => addToCart(item)}>
-        Add to Cart
-      </button>
-    </div>
-  );
-};
-
-export default MenuItem;
-rc / data / menuData.js;
+// src/data/menuData.js
 
 export const menuItems = [
   {
@@ -46,7 +29,7 @@ export const menuItems = [
     id: 4,
     name: "Scrummy Toast with Spreads",
     price: 3.95,
-    image: "/images/Toast.jpg",
+    image: "/images/YummyToast.jpg",
     description:
       "Perfectly golden slices of artisanal bread, ready for your favourite topping. From Marmite to marmalade, it's a crispy canvas for your childhood favourites.",
   },
@@ -54,7 +37,7 @@ export const menuItems = [
     id: 5,
     name: "Potato Rösti with Crème Fraîche",
     price: 5.5,
-    image: "/images/PotatoRosti.jpg",
+    image: "/images/PotatoRostis.jpg",
     description:
       "Crispy, golden potato cakes that crackle with each bite, paired with a dollop of silky crème fraîche. A comforting hug on a plate.",
   },
@@ -62,7 +45,7 @@ export const menuItems = [
     id: 6,
     name: "Blueberry Pancake Stack",
     price: 8.95,
-    image: "/images/PancakeBlueberries.jpg",
+    image: "/images/Pancakes.jpg",
     description:
       "A towering tribute to lazy Sunday mornings. Fluffy pancakes studded with plump blueberries, drizzled with golden syrup. Pure indulgence!",
   },

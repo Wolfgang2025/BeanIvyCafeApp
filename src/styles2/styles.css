@@ -121,6 +121,7 @@ body {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -223,7 +224,11 @@ input[type="number"] {
 .contactContainer {
   /* font-family: "Roboto", sans-serif;
   color: #d2c7c7; */
-  margin-left: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin-left: 150px;
   margin-top: 80px;
 }
 
@@ -234,4 +239,20 @@ input[type="number"] {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   padding-left: 20px;
+}
+/*styling for nav*/
+.content {
+  padding-top: 80px; /* Adjust based on navbar height */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #e6d8c2;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

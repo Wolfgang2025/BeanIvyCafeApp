@@ -1,39 +1,77 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles2/Contact.css";
+
 
 export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
 
   // Handle the subscription form submit
-  const handleSubscriptionSubmit = (e) => {
+  const handleFeedbackSubmit = async (e) => {
     e.preventDefault();
-    console.log("Subscribed with email:", email);
-    setEmail(""); // Clear email input after submission
+    try {
+      const response = await axios.post("http://localhost:5000/submit-feedback", {
+        email,
+        feedback,
+      });
+      
+      alert(response.data.message);
+      setEmail(""); // Clear input
+      setFeedback(""); // Clear feedback
+    } catch (error) {
+      alert("Error submitting feedback!");
+      console.error(error);
+    }
   };
 
-  // Handle the feedback form submit
-  const handleFeedbackSubmit = (e) => {
+  // Handle the subscription form submit
+  const handleSubscriptionSubmit = async (e) => {
     e.preventDefault();
-    console.log("Feedback submitted:", feedback);
-    alert("Thank you for your feedback!");
-    setFeedback(""); // Clear feedback input after submission
+    try {
+      const response = await axios.post("http://localhost:5000/subscribe", {
+        email
+      });
+      
+      alert(response.data.message);
+      setEmail(""); // Clear input
+    } catch (error) {
+      alert("Error subscribing to newsletter!");
+      console.error(error);
+    }
   };
 
   return (
-    <div className="about-us">
-      <h1 className="cursive-heading">Contact Us</h1>
-   
-      <p>
+  
+    <div className="contactContainer">
+      <div className="about-us">
+      <div className="contact-form" style={{ padding: "10px", maxWidth: "700px", margin: "0 auto", paddingBottom: "70px" }}>
+        <h2 className="cursive-heading">✨📞 Contact Us ☕📍</h2>
+        
+        
+        <p>
         We’d love to hear from you! Reach out to us for any questions, feedback, or just to say hello.
       </p>
+       
+       
+        <ul className="contact-list">
+          <li>
+            <strong>Email:</strong> contact@beanandivy.co.uk
+          </li>
+          
+          <li>
+            <strong>Phone:</strong> +44 (0)20 7946 0958
+          </li>
+          
+          <li>
+            <strong>Visit us</strong>: Bean & Ivy Café, 45 Mayfair Lane,
+            Mayfair, London, W1K 7AA, United Kingdom
+          </li>
+        </ul>
+        
 
-      <div className="contact-form" style={{ padding: "20px", maxWidth: "800px", margin: "0 auto", paddingBottom: "50px" }}>
-        <h2 className="cursive-heading">Contact Information</h2>
-        <p>Email: contact@beanandivy.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Visit us at 123 Coffee Lane, Brewtown.</p>
-
+      
+      <div className="newsletter-sectiom">
         <h3>Subscribe to our Newsletter</h3>
         <form onSubmit={handleSubscriptionSubmit}>
           <label>
@@ -48,7 +86,10 @@ export default function ContactPage() {
           </label>
           <button type="submit" className="submit-button">Subscribe</button>
         </form>
+      </div>
 
+      
+       <div className="feedback-section">
         <h3>Leave Your Feedback</h3>
         <form onSubmit={handleFeedbackSubmit}>
           <label>
@@ -61,8 +102,10 @@ export default function ContactPage() {
           </label>
           <button type="submit" className="submit-button">Submit Feedback</button>
         </form>
+       </div>
       </div>
     </div>
+  </div>
   );
 }
 
