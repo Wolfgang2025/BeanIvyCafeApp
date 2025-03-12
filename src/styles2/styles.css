@@ -11,31 +11,15 @@ body {
 }
 
 .App {
-  max-width: 1200px;
+  max-width: 150vw;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding: 0;
-}
-
-.nav-link {
-  color: #f8f4e9;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.5em;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #d4a574;
-}
-
-.cafe-name {
-  font-family: "Amatic SC", cursive;
-  font-size: 4em;
-  color: #f8f4e9;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin-top: 60px; /* Adjusted to account for navbar height */
+  padding-top: 25vh; /* Adjust as needed */
+  padding-left: 255px; /*MOVE TO nav-routes-container - Adjust this value based on your navbar's width. 155px width + 50px left padding + 50px right padding = 255px */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cursive-heading {
@@ -50,22 +34,17 @@ body {
 .checkout-page {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Pushes content to the bottom */
-  min-height: 30vh; /* Ensures it only takes up the lower half */
-  padding-top: 0.7vh; /* Adjusted padding to lower content */
-  align-items: center; /* Centers items horizontally */
-  text-align: center; /* Centers text within the container */
-  background-color: rgba(230, 210, 169, 0.5);
-  max-width: 1700px; /* Adjust width to avoid too much empty space */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin: 2rem auto; /* Center the block and add some margin */
+  max-width: 85%; /* Use percentage for responsiveness */
+  /* Remove the bottom, left, and transform properties */
+  background-color: rgba(230, 210, 169, 0.8);
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem 2rem; /* Balanced padding for spacing */
-  margin: auto;
-  position: absolute;
-  bottom: 10vh; /* Positions the box closer to the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Centers horizontally */
-  line-height: 1.5; /* Improves readability */
+  line-height: 1.5;
+  text-align: center;
 }
 
 strong {
@@ -83,6 +62,7 @@ strong {
   padding-left: 20px;
 }
 
+/* IN USE - RENAME and/or MOVE TO MenuPage/MenuItem.css ? */
 .menu-intro {
   font-size: 20px;
   color: #5c4033; /* Deep mocha brown for warm readability */
@@ -92,12 +72,14 @@ strong {
   padding-left: 20px;
 }
 
+/* USE - TBC - MOVE TO MenuPage.css / DELETE? */
 /*.menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
 }*/
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-card {
   background-color: rgba(250, 238, 171, 0.9);
   border-radius: 10px;
@@ -106,10 +88,12 @@ strong {
   transition: transform 0.3s ease;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-card:hover {
   transform: translateY(-5px);
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-image {
   width: 100%;
   height: 200px;
@@ -117,12 +101,14 @@ strong {
   border-radius: 10px;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-price {
   font-family: "Amatic SC", cursive;
   font-size: 1.5em;
   color: #f5e2d6;
 }
 
+/* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-description {
   color: #faf7f7;
   font-size: 0.9em;
@@ -134,6 +120,7 @@ strong {
   -webkit-box-orient: vertical;
 }
 
+/* USE - TBC - MOVE TO separate css for orders/cart ? */
 .order-button {
   background-color: #755343;
   color: #f8f4e9;
@@ -146,10 +133,12 @@ strong {
   transition: background-color 0.3s ease;
 }
 
+/* USE - TBC - MOVE TO separate css for orders/cart ? */
 .order-button:hover {
   background-color: #8b6246;
 }
 
+/* USE - TBC ? */
 .product-page {
   background-color: rgba(230, 210, 169, 0.8);
   max-width: 600px;
@@ -159,6 +148,7 @@ strong {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* USE - TBC ? */
 .product-image {
   width: 100%;
   max-height: 400px;
@@ -167,84 +157,53 @@ strong {
   margin-bottom: 1rem;
 }
 
+/* USE - TBC ? */
 .product-description {
   color: #f8f4f4;
   margin-bottom: 1rem;
 }
 
+/* USE - TBC ? */
 input[type="number"] {
   width: 50px;
   padding: 5px;
   margin-right: 10px;
 }
 
-/* General footer styling */
-.footer {
-  font-family: "Roboto", sans-serif;
-  background-color: rgba(14, 13, 13, 0.85);
-  color: #f8f4e9; /* Light text color for contrast */
-  padding: 25px 0;
+/* Z added new container for the nav+routes div in MyRoutes.jsx */
+.nav-routes-container {
   display: flex;
-  justify-content: center; /* Align links horizontally at the center */
-  align-items: center; /* Vertically align items */
-  position: fixed; /* Keep the footer at the bottom */
-  width: 100%; /* Full width of the page */
-  /* max-width: 1500px; */
-  bottom: 0; /* Stick to the bottom */
+  flex-direction: row; /* Align elements horizontally */
+  gap: 5rem; /*Space between items */
+  width: 100%; /* Ensure the container takes full width */
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 0; /* Remove any unnecessary padding that could restrict resizing */
+  margin: 0 auto;
 }
 
-/* Styling for the unordered list (ul) to use flexbox */
-.footer ul {
-  display: flex; /* Enable flexbox */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  list-style: none; /* Remove default bullet points */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .nav-routes-container {
+    flex-direction: column; /* Stack elements in a column on smaller screens */
+    align-items: center; /* Center the items if needed */
+    gap: 20px; /* Increase gap for stacked items */
+  }
 }
 
-/* Styling for each list item (li) to space them out */
-.footer li {
-  margin: 0 20px; /* Add horizontal margin between the links */
+@media (max-width: 800px) {
+  .home-page,
+  .about-us,
+  .checkout-page {
+    padding-left: 5px; /* Adjust padding on small screens */
+    padding-right: 5px;
+  }
 }
 
-/* Link Styling */
-.footer a {
-  text-decoration: none;
-  color: rgba(243, 233, 212, 0.8); /* Light colour for the links */
-  margin: 0 15px; /* Space out links horizontally */
-  font-size: 17px; /* Font size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.footer a:hover {
-  color: #d4a574; /* Lighter color on hover */
-}
-
-/* Optional: Make the footer text larger on mobile */
 @media (max-width: 768px) {
-  .footer {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+  .App,
+  .nav-routes-container,
+  body {
+    padding-left: 0; /* Remove padding on smaller screens */
   }
-
-  .footer a {
-    margin: 10px 0; /* Vertical margin between links */
-  }
-}
-
-.contactContainer p {
-  text-align: left;
-  padding-left: 20px;
-}
-
-.contact-list {
-  list-style: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-}
-
-.contact-list li {
-  font-size: 20px; /* Increases font size */
-  font-weight: 500; /* Slightly bolder for better readability */
-  margin-bottom: 10px; /* Adds spacing between list items */
-  color: #5c4033; /* Deep mocha brown for warm readability */
-  font-family: "Roboto", sans-serif; /* Keeps consistency */
 }
