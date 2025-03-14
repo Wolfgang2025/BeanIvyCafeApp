@@ -63,7 +63,7 @@
   color: #ff6347; /* Tomato color */
 }
 
-/* Adjust navbar styles for screens smaller than 100px */
+/* Adjust navbar styles for screens smaller than 900px */
 @media (max-width: 900px) {
   .navbar {
     position: fixed;
@@ -101,7 +101,7 @@
   .navbar {
     position: static; /*or change to top fixed, or however you want the navbar to behave on mobile*/
     width: 100%;
-    min-width: 90vw;
+    max-width: 90vw;
     left: 0;
     top: 0;
     padding: 0;
@@ -135,3 +135,35 @@
     border-radius: 50%;
   }
 }
+
+/* Adjust navbar styles for screens larger than 1500px */
+/* @media (min-width: 1500px) {
+  .navbar {
+    position: static;
+    width: 100%;
+    max-width: 12vw;
+    left: 0;
+    top: 0;
+    padding: 1rem 0;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .nav-links,
+  .nav-links li {
+    padding: 1.5rem;
+    margin: 0 1rem; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alike", serif;
+  }
+  .navbar-logo {
+    width: 100%;
+    max-height: 5rem; 
+    padding: 0.8rem;
+    margin: 0 1rem; 
+    object-fit: contain;
+    display: block;
+  }
+} */

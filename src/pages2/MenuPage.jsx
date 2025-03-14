@@ -8,7 +8,7 @@ const MenuPage = ({ cartItems, addToCart }) => {
   return (
     <div className="menu-page">
       <div className="menu-header">
-        <h1 className="cursive-heading">Our Menu</h1>
+        <h2>Our Menu</h2>
         <Link to="/checkout" className="cart-icon">
           🛒 {cartItems.length > 0 && <span>{cartItems.length}</span>}
         </Link>

@@ -20,6 +20,7 @@ const MyRoutes = ({ cartItems, addToCart, updateQuantity, removeItem }) => {
           </div>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route
               path="/menu"
               element={<MenuPage cartItems={cartItems} addToCart={addToCart} />}
@@ -34,7 +35,6 @@ const MyRoutes = ({ cartItems, addToCart, updateQuantity, removeItem }) => {
                 />
               }
             />
-            <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/orderingtcs" element={<OrderingTCs />} />
             <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />

@@ -6,7 +6,7 @@ const HomePage = () => {
       {/* Welcome Section */}
       <div className="welcome-section text-center mb-6">
         <h1 className="cursive-heading">
-          ☕Welcome to Bean & Ivy: Where Every Cup Tells a Story🌿
+          ☕ Welcome to Bean & Ivy: Where Every Cup Tells a Story 🌿
         </h1>
         <p className="menu-intro">
           Step into <strong>Bean & Ivy</strong>, a haven where flavours, aromas,

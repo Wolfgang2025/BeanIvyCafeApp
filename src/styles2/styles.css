@@ -15,8 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 25vh; /* Adjust as needed */
-  padding-left: 255px; /*MOVE TO nav-routes-container - Adjust this value based on your navbar's width. 155px width + 50px left padding + 50px right padding = 255px */
+  padding-top: 10vh; /* Adjust as needed */
+  padding-left: 15rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -38,7 +38,6 @@ body {
   align-items: center; /* Center horizontally */
   margin: 2rem auto; /* Center the block and add some margin */
   max-width: 85%; /* Use percentage for responsiveness */
-  /* Remove the bottom, left, and transform properties */
   background-color: rgba(230, 210, 169, 0.8);
   padding: 2rem;
   border-radius: 10px;
@@ -53,18 +52,18 @@ strong {
 }
 
 .about-us p {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #5c4033; /* Deep mocha brown for warm readability */
   font-weight: 400; /* Ensures standard text weight */
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  padding-left: 20px;
+  padding-left: 1.2rem;
 }
 
 /* IN USE - RENAME and/or MOVE TO MenuPage/MenuItem.css ? */
 .menu-intro {
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #5c4033; /* Deep mocha brown for warm readability */
   font-weight: 400; /* Ensures standard text weight */
   text-align: left;
@@ -80,13 +79,13 @@ strong {
 }*/
 
 /* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
-.menu-card {
+/* .menu-card {
   background-color: rgba(250, 238, 171, 0.9);
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
+} */
 
 /* USE - TBC - MOVE TO MenuPage/MenuItem.css ? */
 .menu-card:hover {
@@ -170,11 +169,11 @@ input[type="number"] {
   margin-right: 10px;
 }
 
-/* Z added new container for the nav+routes div in MyRoutes.jsx */
+/* For the nav+routes div in MyRoutes.jsx */
 .nav-routes-container {
   display: flex;
   flex-direction: row; /* Align elements horizontally */
-  gap: 5rem; /*Space between items */
+  gap: 5rem; /*Space between items*/
   width: 100%; /* Ensure the container takes full width */
   justify-content: space-around;
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
